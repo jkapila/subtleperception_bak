@@ -1,0 +1,242 @@
+# Custom Tranquilpeak Theme
+
+baseURL = "https://jitinkapila.com/"
+languageCode = "en-us"
+defaultContentLanguage = "en-us"
+title = "Subtle Perception"
+theme = "tranquilpeak"
+disqusShortname = "jitinkapila"
+googleAnalytics = "UA-167599979-1"
+paginate = 7
+canonifyurls = true
+
+[permalinks]
+  post = "/post/:slug/" 
+  # post = "/:year/:month/:slug/"
+
+[taxonomies]
+  tag = "tags"
+  category = "categories"
+  archive = "archives"
+
+[author]
+  name = "Jitin Kapila"
+  bio = "Subtle Observer in _Time_ and **Space**"
+  job = "Data Science | Researcher"
+  location = "Bengaluru, IN"  
+  # Your profile picture
+  picture = "sitewide/author_pic.jpg"
+  twitter = "jitinkapila"
+  
+
+# Menu Configuration
+[[menu.main]]
+  weight = 1
+  identifier = "posts"
+  name = "Blog"
+  pre = "<i class=\"sidebar-button-icon fas fa-pencil-alt\"></i>"
+  url = "/posts"
+
+[[menu.main]]
+  weight = 2
+  identifier = "portfolio"
+  name = "Portfolio"
+  pre = "<i class=\"sidebar-button-icon fas fa-code\" title='Portfolio'></i>"
+  url = "/categories/portfolio"
+
+[[menu.main]]
+  weight = 3
+  identifier = "about"
+  name = "About"
+  pre = "<i class=\"sidebar-button-icon fas fa-user\"></i>"
+  url = "/about"
+
+[[menu.main]]
+  weight = 5
+  identifier = "tags"
+  name = "Tags"
+  pre = "<i class=\"sidebar-button-icon fas fa-tags\"></i>"
+  url = "/tags"
+
+[[menu.main]]
+  weight = 5
+  identifier = "archives"
+  name = "Archives"
+  pre = "<i class=\"sidebar-button-icon fas fa-archive\"></i>"
+  url = "/archives"
+
+[[menu.main]]
+  weight = 5
+  identifier = "categories"
+  name = "Categories"
+  pre = "<i class=\"sidebar-button-icon fas fa-bookmark\"></i>"
+  url = "/categories"
+
+[[menu.main]]
+  weight = 6
+  identifier = "home"
+  name = "Home"
+  pre = "<i class=\"sidebar-button-icon fas fa-home\"></i>"
+  url = "/"
+
+[[menu.links]]
+  weight = 1
+  identifier = "Twitter"
+  name = "Twitter"
+  pre = "<i class=\"sidebar-button-icon fab fa-twitter-square\"></i>"
+  url = "https://twitter.com/jitinkapila"
+
+[[menu.links]]
+  weight = 2
+  identifier = "github"
+  name = "GitHub"
+  pre = "<i class=\"sidebar-button-icon fab fa-github-square\"></i>"
+  url = "https://github.com/jkapila"
+
+[[menu.links]]
+  weight = 3
+  identifier = "linkedin"
+  name = "Linkedin"
+  pre = "<i class=\"sidebar-button-icon fab fa-linkedin\"></i>"
+  url = "https://in.linkedin.com/in/jitinkapila"
+
+[[menu.misc]]
+  weight = 1
+  identifier = "rss"
+  name = "RSS"
+  pre = "<i class=\"sidebar-button-icon fa fa-lg fa-rss\"></i>"
+  url = "/index.xml"
+
+[params]
+
+  # Global keywords configuration
+  keywords = ["data-science", "machine-learning","R","Python","artificial-intelligence","deep-learning"]
+
+  # Will write my own to make theme more adaptive to R
+  syntaxHighlighter = "highlight.js"
+
+  # Clear Readting is always true
+  clearReading = true
+
+  # If false it will flat categories.
+  hierarchicalCategories = false
+
+  description = "A blog for perception!"
+
+  # Customization
+  # Define the behavior of the sidebar
+  sidebarBehavior = 2
+
+  #### Current Cover behaviour 
+  ### For image 
+  # coverImage = "sitewide/background_img.png"
+  # IsImage = true
+  ### For javascript
+  coverImage = "drawSketch"
+  IsImage = false
+
+  # Word per minute
+  wordsperminute = 140
+
+  # Display an image gallery at the end of a post which have photos variables (false: disabled, true: enabled)
+  imageGallery = true
+
+  # Display thumbnail image of each post on index pages (false: disabled, true: enabled)
+  thumbnailImage = true
+
+  # Display thumbnail image at the right of title in index pages (`right`, `left` or `bottom`)
+  thumbnailImagePosition = "left"
+
+  # Automatically select the cover image 
+  autoThumbnailImage = true
+
+  # Your favicon path, default is "/favicon.png"
+  favicon = "sitewide/favicon.ico"
+
+  # Display `Next` on left side of the pagination, and `Prev` on right side one.
+  # If you set this value to `true`, these positions swap.
+  swapPaginator = true
+
+  # Custom CSS. Put here your custom CSS files.  
+  # [[params.customCSS]]
+  #   href = ["css/sketch.css","css/syntax.css","css/tabit.css"]
+
+  # Custom JS. Put here your custom JS files. 
+  # [[params.customJS]]
+  #    src = ["js/sketch.js"]
+
+  # mathjax support for theme ( also will make support from katex inside)
+  [params.math]
+    enable = true  
+    use = "mathjax"
+
+  #custom toc to be used. this is work in progress
+  showtoc=true
+
+  # enabling Emoji
+  enableEmoji=true
+  
+  # Markup setup 
+  [markup]
+    defaultMarkdownHandler = "blackfriday"
+    #defaultMarkdownHandler = "goldmark"
+    [markup.blackfriday]
+      
+        [markup.highlight]
+            codeFences = true
+            guessSyntax = false
+            lineNos = true
+            lineNumbersInTable = true
+            #noClasses = false
+            style = "rrt"
+            tabWidth = 4
+
+#  Have to learn more on this this usually breaks everything and the toc too
+#        [markup.blackfriday.extensions]
+#            definitionList = true
+#            footnote = true
+#            linkify = true
+#            strikethrough = true
+#            table = true
+#            taskList = true
+#            typographer = true
+#        [markup.tableOfContents]
+#            startLevel = 1
+#            endLevel = 6
+#            ordered = true
+
+
+  # Sharing options
+  [[params.sharingOptions]]
+    name = "Facebook"
+    icon = "fab fa-facebook-square"
+    url = "https://www.facebook.com/sharer/sharer.php?u=%s"
+
+  [[params.sharingOptions]]
+    name = "Twitter"
+    icon = "fab fa-twitter-square"
+    url = "https://twitter.com/intent/tweet?text=%s"
+
+  [[params.sharingOptions]]
+    name = "Google+"
+    icon = "fab fa-google-plus"
+    url = "https://plus.google.com/share?url=%s"
+
+  [[params.sharingOptions]]
+    name = "Linkedin"
+    icon = "fab fa-linkedin"
+    url = "https://www.linkedin.com/shareArticle?mini=true&url=%s"
+
+  [params.header.rightLink]
+    class = ""
+    icon = ""
+    url = "/#about"
+
+  # Customize link of author avatar in sidebar
+  [params.sidebar.profile]
+     url = "/#about"
+
+  # Customize copyright value "© 2017 <CUSTOMIZATION>. All Rights Reserved"
+  [params.footer]
+     copyright = "<a href=\"https://github.com/jkapila\">Jitin Kapila</a>"
+

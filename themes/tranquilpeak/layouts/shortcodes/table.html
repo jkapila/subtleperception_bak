@@ -1,0 +1,16 @@
+{{- $caption := .Get "caption" }}
+{{- $table_number := .Get "table_number" }}
+{{- $striped := .Get "striped" | default true }}
+
+<div class="table-wrapper">
+<a name="table-{{ $table_number }}"></a>
+{{- if $striped -}}
+	<table class="striped" aria-label="Table {{ $table_number }}{{ if $caption}}: {{ $caption }}{{ end }}">
+{{else}}
+	<table class="unstriped" aria-label="Table {{ $table_number }}{{ if $caption}}: {{ $caption }}{{ end }}">
+{{end}}
+
+{{- if $caption }}<caption>Table {{ $table_number}}: {{ $caption | markdownify }}</caption>{{- end }}
+{{ .Inner | markdownify }}
+</table>
+</div>

@@ -1,0 +1,35 @@
+
+
+body{ margin:0; font:normal 75% Arial, Helvetica, sans-serif; } 
+canvas{ display: block; vertical-align: bottom; }
+
+/*.about{
+	background: #050814;
+	border: rgba(17, 26, 35, 0);
+}*/
+
+/* ---- particles.js container ---- */
+#drawSketch{
+     position:absolute;
+     width: 100%;
+     height: 100%;
+     background-color: #050814;
+     background-image: url("");
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-position: 50% 50%;
+}
+
+/*------- P5.js css --------------- */
+canvas.backgroundsketch {
+	position: absolute;
+	top: 0;
+	left: 0;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+
+	z-index: -1;
+}

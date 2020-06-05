@@ -1,0 +1,24 @@
+{{ with .Params.dependency }}
+	{{ $dependencyLen := len . }}
+	{{ if gt $dependencyLen 0 }}
+		{{ range $k, $v := . }}
+			{{ if eq $v "mermaid"}}
+				<script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/8.5.1/mermaid.min.js" integrity="sha256-l28DspUteK5IQ/BJAooA6UHmm/m4kYuJ4NvoeEmz3K0=" crossorigin="anonymous"></script>
+			{{else if eq $v "plotly"}}
+				<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+			{{else if eq $v "d3"}}
+				 <script src="https://d3js.org/d3.v5.min.js"></script>
+			{{else if eq $v "c3"}}
+				 <script src="https://d3js.org/d3.v5.min.js"></script>
+				 <script src="https://cdnjs.cloudflare.com/ajax/libs/c3/0.7.15/c3.min.js" integrity="sha256-c8Se556pPduNURww1xPQduyWV1LI/ARRt61o6LQreGw=" crossorigin="anonymous"></script>
+			{{else if eq $v "p5"}}
+				<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.min.js" integrity="sha256-Pg1di+fBF53Rbh9oZR/FeD1xsFzTLC963lcac1D0ias=" crossorigin="anonymous"></script>			
+			{{end}}
+		{{ end }}
+	{{ end }}
+	{{/* Some default libraries */}}
+	{{/* typeit */}}
+		<script src="https://cdn.jsdelivr.net/npm/typeit@7.0.4/dist/typeit.min.js"></script>
+	{{/* more will come here if it is used in each page. */}}
+{{ end }}
+

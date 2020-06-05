@@ -1,0 +1,16 @@
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+
+.idea
+*~
+.DS_Store
+.sass-cache
+themes/tranquilpeak/assets
+themes/tranquilpeak/node_modules
+themes/tranquilpeak/src/_bower_components
+themes/tranquilpeak/static/js/*
+!themes/tranquilpeak/static/js/script-*.min.js
+themes/tranquilpeak/static/css/*
+!themes/tranquilpeak/static/css/style-*.min.css

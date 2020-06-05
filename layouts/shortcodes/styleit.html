@@ -1,0 +1,22 @@
+
+<link href="/css/solution.css" rel="stylesheet" />
+
+{{ $size := .Get "size" | default "40%" }}
+{{ $side := .Get "side" | default "left" }}
+{{ $color := .Get "color" | default "#8bc9f0" }}
+{{ $textColor := .Get "text" | default "light"}}
+{{ $tag := .Get "tag" | default "div" }}
+
+
+{{- $direction := cond (eq $side "left") "ltr" "rtl" -}}
+{{- $textColor = cond (eq $textColor "light") "#ebebeb" "#090923" -}}
+
+{{- $style := printf "width: %s; background-color: %s; float: %s; direction: %s; color: %s;" $size $color $side $direction $textColor | safeCSS -}}	
+
+{{ $trimmedContent := trim .Inner "\n" }}
+
+<aside style={{$style}}>
+	<!-- < {{ $tag | safeHTML}} > -->
+		{{ $trimmedContent | markdownify | emojify }}
+	<!-- < /{{ $tag | safeHTML}} > -->
+</aside>

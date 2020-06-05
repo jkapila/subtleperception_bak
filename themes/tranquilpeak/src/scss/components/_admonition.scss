@@ -1,0 +1,57 @@
+.admonition {
+  position: relative;
+  margin: 1rem 0;
+  padding: 0 .75rem;
+  border-radius: .5rem;
+  background-color: map-get($admonition-background-color-map, 'note');
+  border-left: .25rem solid map-get($admonition-color-map, 'note');
+  overflow: auto;
+
+  .admonition-title {
+    font-weight: bold;
+    text-align: left;
+    margin: 0 -0.75rem;
+    padding: .3rem 3rem;
+    border-bottom: 1px solid map-get($admonition-background-color-map, 'note');
+    background-color: opacify(map-get($admonition-background-color-map, 'note'), 0.15);
+  }
+
+  .admonition-content {
+    //padding: .3rem 0;
+    padding: .31rem 2.1rem;
+  }
+
+  i.icon {
+    font-size: 1.5rem;
+    color: map-get($admonition-color-map, 'note');
+    position: absolute;
+    top: 1.1rem;
+    left: 0.7rem;
+  }
+
+  @each $type, $color in $admonition-color-map {
+    &.#{$type} {
+      border-left-color: $color;
+
+      i.icon {
+        color: $color;
+      }
+    }
+  }
+
+  @each $type, $color in $admonition-background-color-map {
+    &.#{$type} {
+      background-color: $color;
+
+      .admonition-title {
+        border-bottom-color: $color;
+        background-color: opacify($color, 0.15);
+      }
+
+    }
+  }
+
+  &:last-child {
+    margin-bottom: .75rem;
+  }
+}

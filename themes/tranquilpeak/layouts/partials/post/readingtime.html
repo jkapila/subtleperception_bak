@@ -1,0 +1,11 @@
+{{ $wordsperminute := $.Site.Params.wordsperminute | default 220.0 }}
+
+{{ $readTime := mul (div (.WordCount) $wordsperminute) 60 }}
+
+{{ $minutes := math.Floor (div $readTime 60) }}
+{{ $seconds := mod $readTime 60 }}
+
+<!-- <p><i class="far fa-clock"></i> {{ $minutes }} {{ cond (eq $minutes 1) "minute" "minutes" }} and
+    {{ $seconds }} {{ cond (eq $seconds 1) "second" "seconds" }}.</p> -->
+
+<p><i class="far fa-clock"></i> {{ $minutes }} {{ cond (eq $minutes 1) "minute" "minutes" }} </p>

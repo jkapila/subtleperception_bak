@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="generator" content="Hugo 0.71.1 with theme Tranquilpeak 0.4.7-BETA">
+<meta name="author" content="Jitin Kapila">
+<meta name="keywords" content="tech, data-science, machine-learning, R, Python, artificial-intelligence, deep-learning">
+<meta name="description" content="Some off the shelf work">
+
+
+<meta property="og:description" content="Some off the shelf work">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Packages">
+<meta name="twitter:title" content="Packages">
+<meta property="og:url" content="https://jitinkapila.com/post/packages/">
+<meta property="twitter:url" content="https://jitinkapila.com/post/packages/">
+<meta property="og:site_name" content="Subtle Perception">
+<meta property="og:description" content="Some off the shelf work">
+<meta name="twitter:description" content="Some off the shelf work">
+<meta property="og:locale" content="en-us">
+
+  
+    <meta property="article:published_time" content="2020-05-23T17:50:31">
+  
+  
+    <meta property="article:modified_time" content="2020-05-23T17:50:31">
+  
+  
+  
+    
+      <meta property="article:section" content="portfolio">
+    
+  
+  
+    
+      <meta property="article:tag" content="packages">
+    
+      <meta property="article:tag" content="python">
+    
+      <meta property="article:tag" content="R">
+    
+  
+
+
+<meta name="twitter:card" content="summary">
+
+  <meta name="twitter:site" content="@jitinkapila">
+
+
+  <meta name="twitter:creator" content="@jitinkapila">
+
+
+
+
+
+
+  <meta property="og:image" content="https://jitinkapila.com/sitewide/background_img.png">
+  <meta property="twitter:image" content="https://jitinkapila.com/sitewide/background_img.png">
+
+
+  <meta property="og:image" content="https://jitinkapila.com/sitewide/background_img.png">
+  <meta property="twitter:image" content="https://jitinkapila.com/sitewide/background_img.png">
+
+
+
+
+  <meta property="og:image" content="https://jitinkapila.com/sitewide/author_pic.jpg">
+  <meta property="twitter:image" content="https://jitinkapila.com/sitewide/author_pic.jpg">
+
+
+    <title>Packages</title>
+
+    <link rel="icon" href="sitewide/favicon.ico">
+    
+
+    
+
+    <link rel="canonical" href="https://jitinkapila.com/post/packages/">
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.4/jquery.fancybox.min.css" integrity="sha256-vuXZ9LGmmwtjqFX1F+EKin1ThZMub58gKULUyf0qECk=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.4/helpers/jquery.fancybox-thumbs.min.css" integrity="sha256-SEa4XYAHihTcEP1f5gARTB2K26Uk8PsndQYHQC1f4jU=" crossorigin="anonymous" />
+    
+    
+    <link rel="stylesheet" href="https://jitinkapila.com/css/style-grz1tkdt5ebb3qbcc7qo9spi5toi6gjfrxih7kc8gtcqmui78es0kws9q.min.css" />
+    
+    
+
+    
+      
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-167599979-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
+    
+    
+  </head>
+
+  <body>
+    <div id="blog">
+      <header id="header" data-behavior="5">
+  <i id="btn-open-sidebar" class="fa fa-lg fa-bars"></i>
+  <div class="header-title">
+    <a class="header-title-link" href="https://jitinkapila.com/">Subtle Perception</a>
+  </div>
+  
+    
+      <a class="header-right-picture "
+         href="https://jitinkapila.com/#about">
+    
+    
+    
+      
+        <img class="header-picture" src="https://jitinkapila.com/sitewide/author_pic.jpg" alt="Author&#39;s picture" />
+      
+    
+    </a>
+  
+</header>
+
+      <nav id="sidebar" data-behavior="5">
+  <div class="sidebar-container">
+    
+      <div class="sidebar-profile">
+        <a href="https://jitinkapila.com/#about">
+          <img class="sidebar-profile-picture" src="https://jitinkapila.com/sitewide/author_pic.jpg" alt="Author&#39;s picture" />
+        </a>
+        <h4 class="sidebar-profile-name">Jitin Kapila</h4>
+        
+          <h5 class="sidebar-profile-bio">Subtle Observer in <em>Time</em> and <strong>Space</strong></h5>
+        
+      </div>
+    
+    <ul class="sidebar-buttons">
+      
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://jitinkapila.com/post">
+    
+      <i class="sidebar-button-icon fas fa-pencil-alt"></i>
+      
+      <span class="sidebar-button-desc">Blog</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://jitinkapila.com/categories/portfolio">
+    
+      <i class="sidebar-button-icon fas fa-code" title='Portfolio'></i>
+      
+      <span class="sidebar-button-desc">Portfolio</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://jitinkapila.com/about">
+    
+      <i class="sidebar-button-icon fas fa-user"></i>
+      
+      <span class="sidebar-button-desc">About</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://jitinkapila.com/archives">
+    
+      <i class="sidebar-button-icon fas fa-archive"></i>
+      
+      <span class="sidebar-button-desc">Archives</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://jitinkapila.com/categories">
+    
+      <i class="sidebar-button-icon fas fa-bookmark"></i>
+      
+      <span class="sidebar-button-desc">Categories</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://jitinkapila.com/tags">
+    
+      <i class="sidebar-button-icon fas fa-tags"></i>
+      
+      <span class="sidebar-button-desc">Tags</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://jitinkapila.com/">
+    
+      <i class="sidebar-button-icon fas fa-home"></i>
+      
+      <span class="sidebar-button-desc">Home</span>
+    </a>
+  </li>
+
+
+    </ul>
+    <ul class="sidebar-buttons">
+      
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://twitter.com/jitinkapila" target="_blank" rel="noopener">
+    
+      <i class="sidebar-button-icon fab fa-twitter-square"></i>
+      
+      <span class="sidebar-button-desc">Twitter</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://github.com/jkapila" target="_blank" rel="noopener">
+    
+      <i class="sidebar-button-icon fab fa-github-square"></i>
+      
+      <span class="sidebar-button-desc">GitHub</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://in.linkedin.com/in/jitinkapila" target="_blank" rel="noopener">
+    
+      <i class="sidebar-button-icon fab fa-linkedin"></i>
+      
+      <span class="sidebar-button-desc">Linkedin</span>
+    </a>
+  </li>
+
+
+    </ul>
+    <ul class="sidebar-buttons">
+      
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://jitinkapila.com/index.xml">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-rss"></i>
+      
+      <span class="sidebar-button-desc">RSS</span>
+    </a>
+  </li>
+
+
+    </ul>
+  </div>
+</nav>
+
+      
+  <div class="post-header-cover
+              text-center
+              post-header-cover--partial"
+       style="background-image:url('/sitewide/background_img.png')"
+       data-behavior="5">
+    
+      <div class="post-header main-content-wrap text-center">
+  
+    <h1 class="post-title" itemprop="headline">
+      Packages
+    </h1>
+  
+  
+  <div class="postShorten-meta post-meta">
+    
+      <time itemprop="datePublished" datetime="2020-05-23T17:50:31&#43;05:30">
+        
+  May 23, 2020
+
+      </time>
+    
+    
+  
+  
+    <span>in</span>
+    
+      <a class="category-link" href="https://jitinkapila.com/categories/portfolio">portfolio</a>
+    
+  
+
+
+    
+
+
+
+
+
+
+<p>Reading time: 0 minutes and
+    0 seconds.</p>
+  </div>
+
+</div>
+    
+  </div>
+
+
+
+      <div id="main" data-behavior="5"
+        class="hasCover
+               hasCoverMetaIn
+               hasCoverCaption">
+        <article class="post" itemscope itemType="http://schema.org/BlogPosting">
+          
+            <span class="post-header-cover-caption caption">Made with Particle JS</span>
+          
+          
+          
+          
+ 
+          <div class="post-content markdown" itemprop="articleBody">
+            <div class="main-content-wrap">
+              <p>Some off the shelf work</p>
+
+<ul>
+<li><p>Pygemodels - A package for fitting Growth and Epidemiology Models in Python <a href="https://github.com/jkapila/pygemodels">Github</a></p></li>
+
+<li><p>VCVN - R package for Variable  Selection, Curve Fitting, Variable Conversion and Normalisation <a href="https://github.com/jkapila/vcvn">Github</a></p></li>
+
+<li><p>Simulator Series in R - A Curve and Distribution Simulator in R <a href="https://github.com/jkapila/SimulatorInR">Github</a></p></li>
+</ul>
+              
+            </div> 
+
+          </div>                
+          <div id="post-footer" class="post-footer main-content-wrap">
+            
+              
+                
+                
+                  <div class="post-footer-tags">
+                    <span class="text-color-light text-small">TAGGED IN</span><br/>
+                    
+  <a class="tag tag--primary tag--small" href="https://jitinkapila.com/tags/packages/">packages</a>
+
+  <a class="tag tag--primary tag--small" href="https://jitinkapila.com/tags/python/">python</a>
+
+  <a class="tag tag--primary tag--small" href="https://jitinkapila.com/tags/r/">R</a>
+
+                  </div>
+                
+              
+            
+            <div class="post-actions-wrap">
+  
+      <nav >
+        <ul class="post-actions post-action-nav">
+          
+            <li class="post-action">
+              
+                <a class="post-action-btn btn btn--default tooltip--top" href="https://jitinkapila.com/post/research/" data-tooltip="Research">
+              
+                  <i class="fa fa-angle-left"></i>
+                  <span class="hide-xs hide-sm text-small icon-ml">PREVIOUS</span>
+                </a>
+            </li>
+            <li class="post-action">
+              
+                <a class="post-action-btn btn btn--disabled">
+              
+                  <span class="hide-xs hide-sm text-small icon-mr">NEXT</span>
+                  <i class="fa fa-angle-right"></i>
+                </a>
+            </li>
+          
+        </ul>
+      </nav>
+    <ul class="post-actions post-action-share" >
+      
+        <li class="post-action hide-lg hide-md hide-sm">
+          <a class="post-action-btn btn btn--default btn-open-shareoptions" href="#btn-open-shareoptions">
+            <i class="fa fa-share-alt"></i>
+          </a>
+        </li>
+        
+          <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://jitinkapila.com/post/packages/">
+              <i class="fab fa-facebook-square"></i>
+            </a>
+          </li>
+        
+          <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://jitinkapila.com/post/packages/">
+              <i class="fab fa-twitter-square"></i>
+            </a>
+          </li>
+        
+          <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=https://jitinkapila.com/post/packages/">
+              <i class="fab fa-google-plus"></i>
+            </a>
+          </li>
+        
+          <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://jitinkapila.com/post/packages/">
+              <i class="fab fa-linkedin"></i>
+            </a>
+          </li>
+        
+      
+      
+      <li class="post-action">
+        
+          <a class="post-action-btn btn btn--default" href="#">
+        
+          <i class="fa fa-list"></i>
+        </a>
+      </li>
+    </ul>
+  
+</div>
+
+            
+          </div>
+        </article>
+        <footer id="footer" class="main-content-wrap">
+  <span class="copyrights">
+    &copy; 2020 <a href="https://github.com/jkapila">Jitin Kapila</a>. All Rights Reserved
+  </span>
+</footer>
+
+      </div>
+      <div id="bottom-bar" class="post-bottom-bar" data-behavior="5">
+        <div class="post-actions-wrap">
+  
+      <nav >
+        <ul class="post-actions post-action-nav">
+          
+            <li class="post-action">
+              
+                <a class="post-action-btn btn btn--default tooltip--top" href="https://jitinkapila.com/post/research/" data-tooltip="Research">
+              
+                  <i class="fa fa-angle-left"></i>
+                  <span class="hide-xs hide-sm text-small icon-ml">PREVIOUS</span>
+                </a>
+            </li>
+            <li class="post-action">
+              
+                <a class="post-action-btn btn btn--disabled">
+              
+                  <span class="hide-xs hide-sm text-small icon-mr">NEXT</span>
+                  <i class="fa fa-angle-right"></i>
+                </a>
+            </li>
+          
+        </ul>
+      </nav>
+    <ul class="post-actions post-action-share" >
+      
+        <li class="post-action hide-lg hide-md hide-sm">
+          <a class="post-action-btn btn btn--default btn-open-shareoptions" href="#btn-open-shareoptions">
+            <i class="fa fa-share-alt"></i>
+          </a>
+        </li>
+        
+          <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://jitinkapila.com/post/packages/">
+              <i class="fab fa-facebook-square"></i>
+            </a>
+          </li>
+        
+          <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://jitinkapila.com/post/packages/">
+              <i class="fab fa-twitter-square"></i>
+            </a>
+          </li>
+        
+          <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=https://jitinkapila.com/post/packages/">
+              <i class="fab fa-google-plus"></i>
+            </a>
+          </li>
+        
+          <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://jitinkapila.com/post/packages/">
+              <i class="fab fa-linkedin"></i>
+            </a>
+          </li>
+        
+      
+      
+      <li class="post-action">
+        
+          <a class="post-action-btn btn btn--default" href="#">
+        
+          <i class="fa fa-list"></i>
+        </a>
+      </li>
+    </ul>
+  
+</div>
+
+      </div>
+      <div id="share-options-bar" class="share-options-bar" data-behavior="5">
+  <i id="btn-close-shareoptions" class="fa fa-close"></i>
+  <ul class="share-options">
+    
+      <li class="share-option">
+        <a class="share-option-btn" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fjitinkapila.com%2Fpost%2Fpackages%2F">
+          <i class="fa fab fa-facebook-square"></i><span>Share on Facebook</span>
+        </a>
+      </li>
+    
+      <li class="share-option">
+        <a class="share-option-btn" target="new" href="https://twitter.com/intent/tweet?text=https%3A%2F%2Fjitinkapila.com%2Fpost%2Fpackages%2F">
+          <i class="fa fab fa-twitter-square"></i><span>Share on Twitter</span>
+        </a>
+      </li>
+    
+      <li class="share-option">
+        <a class="share-option-btn" target="new" href="https://plus.google.com/share?url=https%3A%2F%2Fjitinkapila.com%2Fpost%2Fpackages%2F">
+          <i class="fa fab fa-google-plus"></i><span>Share on Google&#43;</span>
+        </a>
+      </li>
+    
+      <li class="share-option">
+        <a class="share-option-btn" target="new" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3A%2F%2Fjitinkapila.com%2Fpost%2Fpackages%2F">
+          <i class="fa fab fa-linkedin"></i><span>Share on Linkedin</span>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+<div id="share-options-mask" class="share-options-mask"></div>
+    </div>
+    
+    <div id="about">
+  <div id="about-card">
+    <div id="about-btn-close">
+      <i class="far fa-times-circle"></i>
+    </div>
+    
+      <img id="about-card-picture" src="https://jitinkapila.com/sitewide/author_pic.jpg" alt="Author&#39;s picture" />
+    
+    <h4 id="about-card-name">Jitin Kapila</h4>
+    
+      <div id="about-card-bio">Subtle Observer in <em>Time</em> and <strong>Space</strong></div>
+    
+    
+      <div id="about-card-job">
+        <i class="fa fa-briefcase"></i>
+        <br/>
+        Data Science | Researcher
+      </div>
+    
+    
+      <div id="about-card-location">
+        <i class="fa fa-map-marker"></i>
+        <br/>
+        Bengaluru, IN
+      </div>
+    
+  </div>
+</div>
+
+    
+
+    
+
+  
+
+  <div id="drawSketch" style="css/sketch.css"> 
+      
+
+ 
+
+ 
+<script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> 
+
+ 
+
+
+
+
+
+
+<script src="https://jitinkapila.com/js/sketch.js" type="text/javascript"></script>
+
+  </div>
+
+
+
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js" integrity="sha256-/BfiIkHlHoVihZdc6TFuj7MmJ0TWcWsMXkeDFwhi0zw=" crossorigin="anonymous"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.7/js/jquery.fancybox.min.js" integrity="sha256-GEAnjcTqVP+vBp3SSc8bEDQqvWAZMiHyUSIorrWwH50=" crossorigin="anonymous"></script>
+
+
+<script src="https://jitinkapila.com/js/script-1okicjfxpuhsqdd1uylnvb2cmuxgqiyhboumqjbicsqy8sskqkm15decwfy.min.js"></script>
+
+
+
+<script lang="javascript">
+  window.onload = updateMinWidth;
+  window.onresize = updateMinWidth;
+  document.getElementById("sidebar").addEventListener("transitionend", updateMinWidth);
+  function updateMinWidth() {
+    var sidebar = document.getElementById("sidebar");
+    var main = document.getElementById("main");
+    main.style.minWidth = "";
+    var w1 = getComputedStyle(main).getPropertyValue("min-width");
+    var w2 = getComputedStyle(sidebar).getPropertyValue("width");
+    var w3 = getComputedStyle(sidebar).getPropertyValue("left");
+    main.style.minWidth = `calc(${w1} - ${w2} - ${w3})`;
+  }
+</script>
+
+
+  <script>
+  $(document).ready(function() {
+    hljs.configure({ classPrefix: '', useBR: false });
+    $('pre.code-highlight > code, pre > code').each(function(i, block) {
+      if (!$(this).hasClass('codeblock')) {
+        $(this).addClass('codeblock');
+      }
+      hljs.highlightBlock(block);
+    });
+  });
+  </script>
+
+
+
+
+
+  
+  
+  
+
+
+
+
+
+  
+  
+  <script type="text/javascript">
+  
+  </script>
+
+
+
+
+
+  
+
+
+
+    
+  
+
+
+<script type="text/javascript"
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+<script type="text/x-mathjax-config">
+	MathJax.Hub.Config({
+	  tex2jax: {
+	    inlineMath: [['$','$'], ['\\(','\\)']],
+	    displayMath: [['$$','$$'], ['\[','\]']],
+	    processEscapes: true,
+	    processEnvironments: true,
+	    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+	    TeX: { equationNumbers: { autoNumber: "AMS" },
+	         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+	  }
+	});
+	</script>
+
+</script>
+
+
+    
+  </body>
+</html>
+

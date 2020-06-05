@@ -1,0 +1,42 @@
+<!-- {{- $content := trim .Inner "\n" -}} -->
+{{- $content := .Inner -}}
+{{- $id := .Get "id" | default "defaultid" -}}
+{{- $classList := .Get "class" | slice -}}
+{{- $tag := .Get "tag" | default "div" -}}
+
+{{- with .Get "code" -}}
+    {{- /* highlight code content without line number */ -}}
+    {{- $hcontent := highlight $content . "linenos=false" -}}
+    {{- /* delete outer label */ -}}
+    {{- $hcontent = replaceRE `<div class="highlight"><pre class="chroma"><code[^<>]*>(?s)(.*)</code></pre></div>` "$1" $hcontent -}}
+    {{- /* parsing markdown links */ -}}
+    {{- $hcontent = replaceRE `(<span[^<>]*>)([^<>]*)\[([^<>]+)\]\(([^<>]+)\)([^<>]*)(</span>)` "$1$2$6<a href=$4>$3</a>$1$5$6" $hcontent -}}
+    {{- /* replace " " to "&nbsp;" and replace "\n" to "<br />" */ -}}
+    {{- $hcontent = replaceRE ` ` "&nbsp;" $hcontent | replaceRE `(<\w+)&nbsp;` "$1 " | replaceRE `\n` "<br />" -}}
+    {{- /* fix "<br />" location error which is a bug of Typeit HTML parser */ -}}
+    {{- $hcontent = replaceRE `<br /></span>` "</span><br />" $hcontent -}}
+    {{- $classList = $classList | append "highlight" -}}
+
+    <!-- {{- $content -}} -->
+    <!-- {{- $classList -}} -->
+    {{- $hcontent -}}
+
+{{- else -}}
+    {{- $content = $content | .Page.RenderString -}}
+{{- end -}}
+
+<!-- ## Loading js script 
+## This can be made better if mentioned in site header
+## Will make js loader partial html for this -->
+
+<!-- <div class="typeit"> -->
+<!-- {{- printf `<%v id="%v" class="%v"></%v>` $tag $id (delimit $classList " ") $tag | safeHTML -}} -->
+<span id="{{$id}}"></span>
+    <script>
+      new TypeIt('#{{$id}}', {
+        strings: {{$content}},
+        speed: 50,
+        waitUntilVisible: true
+      }).go();
+    </script>
+<!-- </div> -->

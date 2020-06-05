@@ -1,0 +1,49 @@
+<!-- {{ if .Parent }}
+	{{ $name := trim (.Get "name") " " }}
+	{{ $include := trim (.Get "include") " "}}
+	{{ $codelang := .Get "codelang" }}
+	{{ if not (.Parent.Scratch.Get "multitabs") }}
+	{{ .Parent.Scratch.Set "multitabs" slice }}
+	{{ end }}
+	{{ with .Inner }}
+	{{ if $codelang }}
+	{{ $.Parent.Scratch.Add "multitabs" (dict "name" $name "content" (highlight . $codelang "") ) }}
+	{{ else }}
+	{{ $.Parent.Scratch.Add "multitabs" (dict "name" $name "content" . ) }}
+	{{ end }}
+	{{ else }}
+	{{ $.Parent.Scratch.Add "multitabs" (dict "name" $name "include" $include "codelang" $codelang) }}
+	{{ end }}
+{{ else }}
+	{{- errorf "[%s] %q: tab shortcode missing its parent" site.Language.Lang .Page.Path -}}
+{{ end}} -->
+
+{{ $name := .Get "name" }}
+{{- $tab_set_id := .Parent.Get "name" | default "TabsSet" -}}
+{{- $showtab  := .Parent.Get "showtab" -}}
+{{ $showname := cond (eq $showtab $name) true false }}
+
+{{- $tabID := printf "%s-%s" $tab_set_id $name -}}
+{{ $codetype := .Get "codetype" | default "markdown"}}
+
+<div id={{$tabID}} 
+	 class="tabcontent"
+	 {{ if $showname }}
+	 	style="display:block"		 
+	 {{ end }}
+	 style="overflow: auto; height: 100%">
+
+{{ if eq $codetype "js"}}
+	{{ .Inner | safeJS | safeHTML }}
+{{else if eq $codetype "markdown"}}
+	{{ .Inner | markdownify }}
+{{end}}
+
+</div>
+
+<!-- <link href="/css/tabit.css" rel="stylesheet" />
+<script src="/js/tabit.js"></script>
+
+<div class="tab-pane" title="{{ .Get 0 }}">
+ {{ .Inner }}
+</div> -->

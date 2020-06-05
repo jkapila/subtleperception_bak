@@ -1,0 +1,169 @@
+
+
+<link href="/css/solution.css" rel="stylesheet" />
+
+<!-- {{- .Page.Scratch.Add "tabset-counter" 1 -}}
+{{- $tab_set_id := .Get "caption" | default "TabsSet" -}}
+{{- $tabs := .Scratch.Get "multitabs" -}}
+
+<div id="{{ $tab_set_id }}">
+<ul>
+	{{- range $i, $e := $tabs -}}
+	  {{- $id := printf "%s-%d" $tab_set_id $i -}}
+<li><a href="#{{ $id }}">{{- trim .caption " " -}}</a></li>
+{{- end -}}
+</ul>
+{{- range $i, $e := $tabs -}}
+{{- $id := printf "%s-%d" $tab_set_id $i -}}
+<div id="{{ $id }}">
+	{{- with .content -}}
+		{{- . -}}
+	{{- else -}}
+		{{- if eq $.Page.BundleType "leaf" -}}
+			{{- /* find the file somewhere inside the bundle. Note the use of double asterisk */ -}}
+			{{- with $.Page.Resources.GetMatch (printf "**%s*" .include) -}}
+				{{- if ne .ResourceType "page" -}}
+				{{- /* Assume it is a file that needs code highlighting. */ -}}
+				{{- $codelang := $e.codelang | default ( path.Ext .Name | strings.TrimPrefix ".") -}}
+				{{- highlight .Content $codelang "" -}}
+				{{- else -}}
+					{{- .Content -}}
+				{{- end -}}
+			{{- end -}}
+		{{- else -}}
+		{{- $path := path.Join $.Page.File.Dir .include -}}
+		{{- $page := site.GetPage "page" $path -}}
+		{{- with $page -}}
+			{{- .Content -}}
+		{{- else -}}
+		{{- errorf "[%s] tabs include not found for path %q" site.Language.Lang $path -}}
+		{{- end -}}
+		{{- end -}}
+	{{- end -}}
+</div>
+{{- end -}}
+</div>
+{{- $elem :=  $tab_set_id | safeJS -}}
+<script>$(function(){$("#{{ $elem }}").tabs();});</script>-->
+
+
+
+{{- $tabs := .Scratch.Get "multitabs" -}}
+{{- $tab_set_id := .Get "name" | default "TabsSet" -}}
+{{- $tabNum := .Get "tabNum"  | default "0" -}}
+{{ $showtab := .Get "showtab" }}
+
+<!-- {{- range $i, $e := $tabs -}}
+
+	  {{- $id := printf "%s-%d" $tab_set_id $i -}}	  		
+	  {{- $id := printf "%s%d" $tabNum $i -}}
+	  {{- $id := printf "%s-%s" $tab_set_id .name -}}
+	  {{ $showname := cond (eq $showtab .name) true false }}
+	  {{ $clickevent := printf "openTab(event, '%s', %s)" $id $tabNum | safeJS}}
+
+	  {{$i}}<br \>
+	  {{$id}}<br \>
+	  {{ $showname }}<br \>
+	  {{- trim .name " " -}}<br \>
+	  {{ $clickevent}}<br \>
+	  {{.e}}<br \>
+	<br \>
+{{- end -}} -->
+<!-- {{.Inner}}<br \>
+
+
+<!-- <div class="tabcontainer" num="2">
+	<div class="tab">
+	{{- range $i, $e := $tabs -}}
+		{{- $id := printf "%s-%s" $tab_set_id .name -}}
+		{{ $showname := cond (eq $showtab .name) "default" "tag" }}
+		 <button class="tablinks" onclick="openTab(event, {{ $id }})" 
+		 id={{$showname}}>{{- trim .name " " -}}</button>
+	{{- end -}}
+	</div>
+	{{ .Inner }}
+</div>
+ -->
+
+
+<div class="tabcontainer" name={{$tab_set_id}}>
+	<div class="tab">
+	{{- range $i, $e := $tabs -}}
+		{{- $id := printf "%s-%s" $tab_set_id .name -}}
+		{{- $showname := cond (eq $showtab .name) "tablinks active" "tablinks" -}}
+		{{- $clickevent := printf "openTab(event, '%s', '%s')" $id $tab_set_id | safeJS -}}		 
+		<button  name={{$id}} class={{ $showname | safeJS}} 
+		onclick={{ $clickevent | safeJS}}>{{- trim .name " " -}}</button>
+	{{- end -}}
+	</div>
+	{{ .Inner }}	
+</div>
+
+
+<!-- {{- range $i, $e := $tabs -}}
+	{{- $id := printf "%s-%d" $tab_set_id $i -}}
+	<div id={{$id}} class="tabcontent">
+	{{- with .content -}}
+		{{- . -}}
+	{{- else -}}
+	{{- errorf "[%s] %q: tab shortcode missing its parent" site.Language.Lang .Page.Path -}}
+	{{- end -}}
+	</div>
+{{- end -}}
+ -->
+
+<!-- <script>
+function openTab(evt, tabName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(tabName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("default").click();
+</script>
+ -->
+
+<script>
+function openTab(evt, tabName, tabContainer) {
+  var tabcontainer, tabcontent, tablinks,tabidx,c;
+  tabidx = 0;
+  tabcontainer = document.getElementsByClassName("tabcontainer");
+  	console.log(tabcontainer);
+	console.log(tabName);
+	console.log(tabContainer);
+  for (i = 0; i < tabcontainer.length; i++) {
+    if (tabcontainer[i].getAttribute("name") === tabContainer) {
+      tablinks = tabcontainer[i].getElementsByClassName("tablinks");
+      tabcontent = tabcontainer[i].getElementsByClassName("tabcontent");
+	console.log(tablinks);
+	console.log(tabcontent);
+      for (i = 0; i < tablinks.length; i++) {
+	tabname = tablinks[i].getAttribute("name")
+	document.getElementById(tabname).style.display = "none";
+	if (  tabname === tabName){
+		tabidx = i;	
+	}
+        tablinks[i].className = tablinks[i].className.replace("active", "");
+      }
+      console.log(tabidx);
+      //tablinks[tabidx].classList.add("active");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].className = tabcontent[i].className.replace("active", "");
+      }
+      //tabcontent[tabidx].classList.add("active");
+    }
+  }
+  document.getElementById(tabName).style.display = "block";
+  evt.currentTarget.className += " active";
+
+}
+</script>

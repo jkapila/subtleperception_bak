@@ -1,0 +1,11 @@
+
+<link href="/css/solution.css" rel="stylesheet" />
+
+{{ $lang := (lower (.Get "lang")) }}
+{{ $caption := (lower (.Get "caption"))| default "" }}
+
+
+<table style='background-color: #fff'>
+  <caption aligh="right">{{ $caption }}</caption>
+	{{ .Inner }}
+</table>
