@@ -1,7 +1,7 @@
 <header id="header" data-behavior="{{ .Scratch.Get "sidebarBehavior" }}">
   <i id="btn-open-sidebar" class="fa fa-lg fa-bars"></i>
   <div class="header-title">
-    <a class="header-title-link" href="{{ "/" | relLangURL }}">{{ .Site.Title }}</a>
+    <a class="header-title-link" href="{{ "/" | relLangURL }}"style="font-size:1.5em" ><strong>{{ .Site.Title }}</strong></a>
   </div>
   {{ with .Site.Params.header.rightLink }}
     {{ if and (in .url ":") (not (in .url (printf "%s" $.Site.BaseURL))) }}

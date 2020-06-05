@@ -12,6 +12,15 @@
     
     
     <item>
+      <title>development</title>
+      <link>https://subtleperception.netlify.app/tags/development/</link>
+      <pubDate>Sat, 23 May 2020 17:50:31 +0530</pubDate>
+      
+      <guid>https://subtleperception.netlify.app/tags/development/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>packages</title>
       <link>https://subtleperception.netlify.app/tags/packages/</link>
       <pubDate>Sat, 23 May 2020 17:50:31 +0530</pubDate>
@@ -39,11 +48,20 @@
     </item>
     
     <item>
-      <title>development</title>
-      <link>https://subtleperception.netlify.app/tags/development/</link>
+      <title>classification</title>
+      <link>https://subtleperception.netlify.app/tags/classification/</link>
       <pubDate>Mon, 15 Oct 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://subtleperception.netlify.app/tags/development/</guid>
+      <guid>https://subtleperception.netlify.app/tags/classification/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>regression</title>
+      <link>https://subtleperception.netlify.app/tags/regression/</link>
+      <pubDate>Mon, 15 Oct 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://subtleperception.netlify.app/tags/regression/</guid>
       <description></description>
     </item>
     
@@ -53,15 +71,6 @@
       <pubDate>Mon, 15 Oct 2018 00:00:00 +0000</pubDate>
       
       <guid>https://subtleperception.netlify.app/tags/research/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>regression</title>
-      <link>https://subtleperception.netlify.app/tags/regression/</link>
-      <pubDate>Tue, 01 May 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://subtleperception.netlify.app/tags/regression/</guid>
       <description></description>
     </item>
     

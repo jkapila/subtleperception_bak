@@ -3,44 +3,44 @@
         clear: both;
     }
     &.center {
-        width:  calc(100% - 4px);
-        margin: 2px auto;
+        width:  calc(100% - 0.5em);
+        margin: 0.5em auto;
 
         .fig-img {
-            margin: 2px auto;
+            margin: 0.5em auto;
         }
     }
     &.left {
         float:  left;
-        margin: 2px;
+        margin: 0.5em;
     }
     &.right {
         float:  right;
-        margin: 2px;
+        margin: 0.5em;
     }
     &.fig-20 {
         @extend .left;
-        width: calc(20% - 4px);
+        width: calc(20% - 0.5em);
     }
     &.fig-25 {
         @extend .left;
-        width: calc(25% - 4px);
+        width: calc(25% - 0.5em);
     }
     &.fig-33 {
         @extend .left;
-        width: calc(33.3% - 4px);
+        width: calc(33.3% - 0.5em);
     }
     &.fig-50 {
         @extend .left;
-        width: calc(50% - 4px);
+        width: calc(50% - 0.5em);
     }
     &.fig-75 {
         @extend .left;
-        width: calc(75% - 4px);
+        width: calc(75% - 0.5em);
     }
     &.fig-100 {
-        width:  calc(100% - 4px);
-        margin: 2px;
+        width:  calc(100% - 0.5em);
+        margin: 0.5em;
     }
     &.figure--fullWidth {
         width: 100%;

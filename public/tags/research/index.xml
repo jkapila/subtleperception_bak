@@ -13,11 +13,18 @@
     
     <item>
       <title>Research</title>
-      <link>https://subtleperception.netlify.app/posts/research/</link>
+      <link>https://subtleperception.netlify.app/posts/researchs/</link>
       <pubDate>Mon, 15 Oct 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://subtleperception.netlify.app/posts/research/</guid>
-      <description></description>
+      <guid>https://subtleperception.netlify.app/posts/researchs/</guid>
+      <description>&lt;span id=&#34;excerpt&#34;&gt;&lt;/span&gt;
+    &lt;script&gt;
+      new TypeIt(&#39;#excerpt&#39;, {
+        strings: &#34;During my course for learning Data Science over time, I have collected and referred my perspectives in following papers.&#34;,
+        speed: 50,
+        waitUntilVisible: true
+      }).go();
+    &lt;/script&gt;</description>
     </item>
     
   </channel>

@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>development on Subtle Perception</title>
-    <link>https://subtleperception.netlify.app/tags/development/</link>
-    <description>Recent content in development on Subtle Perception</description>
+    <title>classification on Subtle Perception</title>
+    <link>https://subtleperception.netlify.app/tags/classification/</link>
+    <description>Recent content in classification on Subtle Perception</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 23 May 2020 17:50:31 +0530</lastBuildDate>
+    <lastBuildDate>Mon, 15 Oct 2018 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://subtleperception.netlify.app/tags/development/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://subtleperception.netlify.app/tags/classification/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -25,15 +25,6 @@
         waitUntilVisible: true
       }).go();
     &lt;/script&gt;</description>
-    </item>
-    
-    <item>
-      <title>Packages</title>
-      <link>https://subtleperception.netlify.app/posts/packages/</link>
-      <pubDate>Sat, 23 May 2020 17:50:31 +0530</pubDate>
-      
-      <guid>https://subtleperception.netlify.app/posts/packages/</guid>
-      <description>&lt;p&gt;Some off the shelf work&lt;/p&gt;</description>
     </item>
     
   </channel>

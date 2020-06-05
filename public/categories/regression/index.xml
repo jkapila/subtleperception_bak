@@ -17,7 +17,14 @@
       <pubDate>Tue, 01 May 2018 00:00:00 +0000</pubDate>
       
       <guid>https://subtleperception.netlify.app/posts/adaptive-regression/</guid>
-      <description></description>
+      <description>&lt;span id=&#34;excerpt&#34;&gt;&lt;/span&gt;
+    &lt;script&gt;
+      new TypeIt(&#39;#excerpt&#39;, {
+        strings: &#34;We recently put through our observation on Regression Problem in \u003ca href=\&#34;https://arxiv.org/abs/1805.01618\&#34;\u003eOur Paper\u003c/a\u003e. This post is a nonformal attempt to explain it.&#34;,
+        speed: 50,
+        waitUntilVisible: true
+      }).go();
+    &lt;/script&gt;</description>
     </item>
     
   </channel>

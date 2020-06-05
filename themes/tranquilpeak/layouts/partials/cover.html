@@ -15,7 +15,7 @@
 {{ else }}
   {{/* Drawing the sketches form the js. Will make this optionable*/}}
   {{$drawsketch := .Site.Params.coverImage}}
-  <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
   <div id="{{$drawsketch}}"> 
     <link href="/css/sketch.css" rel="stylesheet" /> 
       {{ partial "sketchit.html"}}

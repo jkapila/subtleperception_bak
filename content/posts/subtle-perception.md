@@ -2,25 +2,34 @@
 title: "Subtle Perception"
 date: 2018-01-14
 categories:
-- thoughts
+    - thoughts
 tags:
-- featured
+    - featured
 keywords:
-- thoughts
+    - thoughts
+
 clearReading: true
 thumbnailImage: /sitewide/background_img.png 
-thumbnailImagePosition: left # (right, left or bottom)
-coverMeta: in # in/full
+thumbnailImagePosition: left
+coverMeta: in 
 coverSize: partial # partial/full
+metaAlignment: center 
 comments: true
 showTags: true
 showPagination: true
 showSocial: true
 showDate: true
+weight: 10
+slug: subtle-things
 # summary: "Some basic"
+dependency:
+    - 
+
 ---
 
+{{< typeit id="excerpt" >}}
 Hello All to my first Blog!
+{{< /typeit >}}
 
 <!--more-->
 As this is my first blog post, I just want to give a brief intro to what is this Blog all about.

@@ -8,16 +8,17 @@ tags:
     - packages
     - python
     - R
+    - development
 
 keywords:
-    - tech
+    - 
 
 
 clearReading: true
 thumbnailImage: /sitewide/background_img.png
-thumbnailImagePosition: right 
+thumbnailImagePosition: left 
 autoThumbnailImage: yes 
-metaAlignment: center # right, left or center
+metaAlignment: center 
 coverImage: /sitewide/background_img.png
 coverCaption: "Made with Particle JS"
 coverMeta: in 
@@ -26,8 +27,9 @@ comments: false
 showTags: true
 showPagination: true
 showSocial: true
-showDate: true
-
+showDate: false
+slug: packages
+weight: 100
 ---
 
 Some off the shelf work

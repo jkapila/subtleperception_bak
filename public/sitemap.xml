@@ -3,12 +3,32 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://subtleperception.netlify.app/posts/adaptive-regression/</loc>
+    <lastmod>2018-05-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://subtleperception.netlify.app/posts/subtle-things/</loc>
+    <lastmod>2018-01-14T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://subtleperception.netlify.app/posts/researchs/</loc>
+    <lastmod>2018-10-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://subtleperception.netlify.app/posts/packages/</loc>
+    <lastmod>2020-05-23T17:50:31+05:30</lastmod>
+  </url>
+  
+  <url>
     <loc>https://subtleperception.netlify.app/categories/</loc>
     <lastmod>2020-05-23T17:50:31+05:30</lastmod>
   </url>
   
   <url>
-    <loc>https://subtleperception.netlify.app/posts/packages/</loc>
+    <loc>https://subtleperception.netlify.app/tags/development/</loc>
     <lastmod>2020-05-23T17:50:31+05:30</lastmod>
   </url>
   
@@ -48,28 +68,18 @@
   </url>
   
   <url>
-    <loc>https://subtleperception.netlify.app/tags/development/</loc>
+    <loc>https://subtleperception.netlify.app/tags/classification/</loc>
     <lastmod>2018-10-15T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://subtleperception.netlify.app/posts/research/</loc>
+    <loc>https://subtleperception.netlify.app/tags/regression/</loc>
     <lastmod>2018-10-15T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://subtleperception.netlify.app/tags/research/</loc>
     <lastmod>2018-10-15T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://subtleperception.netlify.app/posts/adaptive-regression/</loc>
-    <lastmod>2018-05-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://subtleperception.netlify.app/tags/regression/</loc>
-    <lastmod>2018-05-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -84,11 +94,6 @@
   
   <url>
     <loc>https://subtleperception.netlify.app/tags/featured/</loc>
-    <lastmod>2018-01-14T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://subtleperception.netlify.app/posts/subtle-perception/</loc>
     <lastmod>2018-01-14T00:00:00+00:00</lastmod>
   </url>
   

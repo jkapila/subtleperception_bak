@@ -31,6 +31,7 @@ showTags: true
 showPagination: true
 showSocial: true
 showDate: true
+slug: shortcodes-and-hugo
 summary: "This is to evaluate my shortcodes and everything."
 draft: true
 
