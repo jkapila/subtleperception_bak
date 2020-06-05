@@ -17,8 +17,8 @@ thumbnailImagePosition: right
 autoThumbnailImage: yes 
 metaAlignment: center 
 coverImage: /sitewide/background_img.png
-coverMeta: in # in/full
-coverSize: partial # partial/full
+coverMeta: in 
+coverSize: partial 
 comments: true
 showTags: true
 showPagination: true
