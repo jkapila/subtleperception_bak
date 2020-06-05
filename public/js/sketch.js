@@ -135,7 +135,7 @@ particlesJS("drawSketch", {
         "nb_sides": 6
       },
       "image": {
-        "src": "img/github.svg",
+        "src": "",
         "width": 100,
         "height": 100
       }

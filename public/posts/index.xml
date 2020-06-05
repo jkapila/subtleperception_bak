@@ -2,48 +2,48 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Subtle Perception</title>
-    <link>https://jitinkapila.com/posts/</link>
+    <link>https://subtleperception.netlify.app/posts/</link>
     <description>Recent content in Posts on Subtle Perception</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 23 May 2020 17:50:31 +0530</lastBuildDate>
     
-	<atom:link href="https://jitinkapila.com/posts/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://subtleperception.netlify.app/posts/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Packages</title>
-      <link>https://jitinkapila.com/posts/packages/</link>
+      <link>https://subtleperception.netlify.app/posts/packages/</link>
       <pubDate>Sat, 23 May 2020 17:50:31 +0530</pubDate>
       
-      <guid>https://jitinkapila.com/posts/packages/</guid>
+      <guid>https://subtleperception.netlify.app/posts/packages/</guid>
       <description>&lt;p&gt;Some off the shelf work&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Research</title>
-      <link>https://jitinkapila.com/posts/research/</link>
+      <link>https://subtleperception.netlify.app/posts/research/</link>
       <pubDate>Mon, 15 Oct 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://jitinkapila.com/posts/research/</guid>
+      <guid>https://subtleperception.netlify.app/posts/research/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Adaptive Regression</title>
-      <link>https://jitinkapila.com/posts/adaptive-regression/</link>
+      <link>https://subtleperception.netlify.app/posts/adaptive-regression/</link>
       <pubDate>Tue, 01 May 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://jitinkapila.com/posts/adaptive-regression/</guid>
+      <guid>https://subtleperception.netlify.app/posts/adaptive-regression/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Subtle Perception</title>
-      <link>https://jitinkapila.com/posts/subtle-perception/</link>
+      <link>https://subtleperception.netlify.app/posts/subtle-perception/</link>
       <pubDate>Sun, 14 Jan 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://jitinkapila.com/posts/subtle-perception/</guid>
+      <guid>https://subtleperception.netlify.app/posts/subtle-perception/</guid>
       <description>&lt;p&gt;Hello All to my first Blog!&lt;/p&gt;</description>
     </item>
     

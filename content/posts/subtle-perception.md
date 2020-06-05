@@ -7,6 +7,7 @@ tags:
 - featured
 keywords:
 - thoughts
+clearReading: true
 thumbnailImage: /sitewide/background_img.png 
 thumbnailImagePosition: left # (right, left or bottom)
 coverMeta: in # in/full

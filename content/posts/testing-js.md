@@ -12,7 +12,7 @@ keywords:
 - tech
 
 
-# clearReading: true
+clearReading: true
 # thumbnailImage: image-1.png
 # thumbnailImagePosition: bottom # (right, left or bottom)
 # autoThumbnailImage: yes # yes/ no

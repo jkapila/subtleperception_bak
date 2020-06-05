@@ -125,7 +125,7 @@ canonifyurls = true
 
   # Customization
   # Define the behavior of the sidebar
-  sidebarBehavior = 2
+  sidebarBehavior = 5
 
   #### Current Cover behaviour 
   ### For image 

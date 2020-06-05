@@ -2,75 +2,75 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Subtle Perception</title>
-    <link>https://jitinkapila.com/tags/</link>
+    <link>https://subtleperception.netlify.app/tags/</link>
     <description>Recent content in Tags on Subtle Perception</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 23 May 2020 17:50:31 +0530</lastBuildDate>
     
-	<atom:link href="https://jitinkapila.com/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://subtleperception.netlify.app/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>packages</title>
-      <link>https://jitinkapila.com/tags/packages/</link>
+      <link>https://subtleperception.netlify.app/tags/packages/</link>
       <pubDate>Sat, 23 May 2020 17:50:31 +0530</pubDate>
       
-      <guid>https://jitinkapila.com/tags/packages/</guid>
+      <guid>https://subtleperception.netlify.app/tags/packages/</guid>
       <description></description>
     </item>
     
     <item>
       <title>python</title>
-      <link>https://jitinkapila.com/tags/python/</link>
+      <link>https://subtleperception.netlify.app/tags/python/</link>
       <pubDate>Sat, 23 May 2020 17:50:31 +0530</pubDate>
       
-      <guid>https://jitinkapila.com/tags/python/</guid>
+      <guid>https://subtleperception.netlify.app/tags/python/</guid>
       <description></description>
     </item>
     
     <item>
       <title>R</title>
-      <link>https://jitinkapila.com/tags/r/</link>
+      <link>https://subtleperception.netlify.app/tags/r/</link>
       <pubDate>Sat, 23 May 2020 17:50:31 +0530</pubDate>
       
-      <guid>https://jitinkapila.com/tags/r/</guid>
+      <guid>https://subtleperception.netlify.app/tags/r/</guid>
       <description></description>
     </item>
     
     <item>
       <title>development</title>
-      <link>https://jitinkapila.com/tags/development/</link>
+      <link>https://subtleperception.netlify.app/tags/development/</link>
       <pubDate>Mon, 15 Oct 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://jitinkapila.com/tags/development/</guid>
+      <guid>https://subtleperception.netlify.app/tags/development/</guid>
       <description></description>
     </item>
     
     <item>
       <title>research</title>
-      <link>https://jitinkapila.com/tags/research/</link>
+      <link>https://subtleperception.netlify.app/tags/research/</link>
       <pubDate>Mon, 15 Oct 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://jitinkapila.com/tags/research/</guid>
+      <guid>https://subtleperception.netlify.app/tags/research/</guid>
       <description></description>
     </item>
     
     <item>
       <title>regression</title>
-      <link>https://jitinkapila.com/tags/regression/</link>
+      <link>https://subtleperception.netlify.app/tags/regression/</link>
       <pubDate>Tue, 01 May 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://jitinkapila.com/tags/regression/</guid>
+      <guid>https://subtleperception.netlify.app/tags/regression/</guid>
       <description></description>
     </item>
     
     <item>
       <title>featured</title>
-      <link>https://jitinkapila.com/tags/featured/</link>
+      <link>https://subtleperception.netlify.app/tags/featured/</link>
       <pubDate>Sun, 14 Jan 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://jitinkapila.com/tags/featured/</guid>
+      <guid>https://subtleperception.netlify.app/tags/featured/</guid>
       <description></description>
     </item>
     
