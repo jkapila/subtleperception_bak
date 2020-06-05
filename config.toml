@@ -1,6 +1,6 @@
 # Custom Tranquilpeak Theme
 
-baseURL = "https://jitinkapila.com/"
+baseURL = "https://subtleperception.netlify.app/"
 languageCode = "en-us"
 defaultContentLanguage = "en-us"
 title = "Subtle Perception"
