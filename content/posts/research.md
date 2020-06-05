@@ -9,7 +9,8 @@ tags:
     - development
     - regression
     - classification
-    - 
+    - reinforcement-learning
+    - clustering
 
 clearReading: true
 thumbnailImage: /sitewide/blue_universe_2.jpg 

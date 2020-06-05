@@ -4,11 +4,13 @@ date: 2018-05-01
 categories:
     - regression
     - research
+    
 tags:
     - regression
-    - R
+    - r
+
 keywords:
-    - R
+    - mape
     - regression
 
 clearReading: true
