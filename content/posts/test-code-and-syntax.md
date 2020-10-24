@@ -135,7 +135,7 @@ My paragraph.
 It can even contain shortcodes.
 {{< /note >}}
 
-## Theme alerts
+## Theme alerts [^1]
 
 {{< alert info >}}
 Praesent diam elit, interdum ut pulvinar placerat, imperdiet at magna.
@@ -153,8 +153,9 @@ Praesent diam elit, interdum ut pulvinar placerat, imperdiet at magna.
 Praesent diam elit, interdum ut pulvinar placerat, imperdiet at magna.
 {{< /alert >}}
 
+[^1]: These are Default Alerts
 
-## More Alerts
+## More Alerts[^2]
 
 {{< morealert note "A Note">}}
 A **note** banner
@@ -203,6 +204,9 @@ An **example** banner
 {{< morealert quote >}}
 A **quote** banner
 {{< /morealert >}}
+
+
+[^2]: These are taken from LoveIt Theme
 
 ## Highlighted texts
 {{< hl-text danger >}}
@@ -283,7 +287,7 @@ Expand Works with mermai only if we keep the open view as of now...
 {{< /morealert >}}
 
 <br>
-{{% expand "This is kiler mermaid" true %}}
+{{< expandit "mm1" "This is kiler mermaid" true >}}
 {{< mermaid >}}
  graph TB;
     c1-->a2
@@ -297,7 +301,7 @@ Expand Works with mermai only if we keep the open view as of now...
     c1-->c2
     end
 {{< /mermaid >}}
-{{% /expand %}}
+{{< /expandit >}}
 
 
 {{% expand "This is killer code" %}}
@@ -310,9 +314,9 @@ np.sum(df,axis=1)
 ```
 {{% /expand %}}
 
-{{% expand "This is killer math" %}}
-\\[ a^2 = b^2 + c^2 \\]
-{{% /expand %}}
+{{< expandit "e2" >}}
+$$ [ a^2 = b^2 + c^2 ] $$
+{{< /expandit >}}
 
 {{% expand "This is killer table" %}}
 {{< table table_number="42" caption="My Table" >}}
@@ -392,10 +396,14 @@ Yet to create a proper external ***prism js*** shortcode again.
 Yet to create a proper external ***highlight js*** shortcode again.
 {{< /styleit >}}
 
+{{< styleit size="100%" side="left" color="#fff" text="dark" >}}
+_This is also a good example of how styleit short code works_
+{{< /styleit >}}
 
 ## Using theme transported highlightjs
-Because somehow I have only the default one.
+Because somehow I have only the default one. This Only renders Pythona and making it work for R is tedious[^3]
 
+[^3]: This is implemented inside the SASS files. Would require to remove it and rebuild the SASS for this one. Also somehow background fot hugo fences is also same and codesit's background. But I like the idea of line number as of now.
 
 {{< codeblock "archives.py" "python" "" "archives.py" >}}
 @requires_authorization
@@ -636,10 +644,10 @@ markdown example
 Last but not least with a footnote:
 
 > Don't communicate by sharing memory, share memory by communicating.</p>
-> — Rob Pike[^1]
+> — Rob Pike[^4]
 
 
-[^1]: The above quote is excerpted from Rob Pike's [talk](https://www.youtube.com/watch?v=PAAkCSZUG1c) during Gopherfest, November 18, 2015.
+[^4]: The above quote is excerpted from Rob Pike's [talk](https://www.youtube.com/watch?v=PAAkCSZUG1c) during Gopherfest, November 18, 2015.
 
 
 
@@ -651,7 +659,10 @@ Last but not least with a footnote:
 {{< button href="https://getgrav.org/" icon="fas fa-download" >}}Get Grav with icon{{< /button >}}
 {{< button href="https://getgrav.org/" icon="fas fa-download" icon-position="right" >}}Get Grav with icon right{{< /button >}}
 
+# A ToolTip is not a bad option
+
+{{< tooltip side="left" tip="Has some text on left" term="Lets start with **this**" />}} then follow with {{< tooltip tip="Has some text on top" term="**this**" />}} which leads to {{< tooltip side="bottom" tip="Has some text on bottom" term="**this**" />}} and then ends with {{< tooltip side="right" tip="Has some text on right" term="**this**." />}}
 
 # Finally some out of box js
 
-{{<relref "posts/testing-js.md">}}
+[JS WORK]({{<ref "posts/testing-js.md">}})

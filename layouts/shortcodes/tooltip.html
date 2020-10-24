@@ -1,0 +1,10 @@
+
+
+{{- $side := .Get "side" | default "top" -}}
+{{- $tip := .Get "tip" | default "" -}}
+{{- $term := .Get "term" | markdownify  -}}
+
+{{if .Inner }}{{end}}
+<span class="tooltip--{{$side}}" 
+		data-tooltip={{$tip}} 
+		style="border-bottom: 1px dashed #999; text-decoration: none; ">{{$term}}</span>

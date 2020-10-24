@@ -11,14 +11,15 @@
     {{ safeHTML .Inner }}
 </div> 
 
-<script>mermaid.initialize({theme: 'forest',
-            themeCSS: ".node rect { fill: #ff0202; } ",
-            cloneCssStyles: false,
-            useMaxWidth: true,
-            startOnLoad:true,
-            htmlLabels: false,
-            flowchart: { 
-                curve: 'basis' 
-            }
-        });
+<script>
+mermaid.initialize({theme: 'forest',
+        themeCSS: ".node rect { fill: #ff0202; } ",
+        cloneCssStyles: false,
+        startOnLoad:true,
+        flowchart:{
+          useMaxWidth:false,
+          htmlLabels:true,
+          curve:'cardinal',
+        }
+    });
 </script>

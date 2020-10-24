@@ -22,7 +22,7 @@
     {{- $hcontent -}}
 
 {{- else -}}
-    {{- $content = $content | .Page.RenderString -}}
+    {{- $content = $content | .Page.RenderString | markdownify | emojify -}}
 {{- end -}}
 
 <!-- ## Loading js script 

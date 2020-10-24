@@ -27,7 +27,7 @@ showPagination: true
 showSocial: true
 showDate: true
 slug: adaptive-regression
-weight: 1
+weight: 2
 summary: "When we can improve stats by simple ways."
 dependency:
     - 

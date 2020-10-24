@@ -14,6 +14,8 @@
     &:after {
         z-index:          map-get($z-indexes, c-tooltip);
         padding:          8px;
+        position:         absolute;
+        text-align:       center;
         // Fixed width of tooltip
         min-width:        map-get($tooltip, min-width);
         background-color: map-get($tooltip, background);

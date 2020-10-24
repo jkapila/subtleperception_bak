@@ -1,6 +1,6 @@
 # Custom Tranquilpeak Theme
 
-baseURL = "https://subtleperception.netlify.app/"
+baseURL = "https://jitinkapila.com/"
 languageCode = "en-us"
 defaultContentLanguage = "en-us"
 title = "Subtle Perception"
@@ -155,7 +155,7 @@ canonifyurls = true
 
   # Display `Next` on left side of the pagination, and `Prev` on right side one.
   # If you set this value to `true`, these positions swap.
-  swapPaginator = true
+  swapPaginator = false
 
   # Custom CSS. Put here your custom CSS files.  
   # [[params.customCSS]]
@@ -178,32 +178,34 @@ canonifyurls = true
   
   # Markup setup 
   [markup]
-    defaultMarkdownHandler = "blackfriday"
-    #defaultMarkdownHandler = "goldmark"
-    [markup.blackfriday]
-      
-        [markup.highlight]
-            codeFences = true
-            guessSyntax = false
-            lineNos = true
-            lineNumbersInTable = true
-            #noClasses = false
-            style = "rrt"
-            tabWidth = 4
-
-#  Have to learn more on this this usually breaks everything and the toc too
-#        [markup.blackfriday.extensions]
-#            definitionList = true
-#            footnote = true
-#            linkify = true
-#            strikethrough = true
-#            table = true
-#            taskList = true
-#            typographer = true
-#        [markup.tableOfContents]
-#            startLevel = 1
-#            endLevel = 6
-#            ordered = true
+    #  Have to learn more on this this usually breaks everything and the toc too
+    # defaultMarkdownHandler = "blackfriday"
+    # [markup.blackfriday]
+   
+    defaultMarkdownHandler = "goldmark"
+    [markup.goldmark]
+      [markup.highlight]
+          codeFences = true
+          guessSyntax = false
+          lineNos = true
+          lineNumbersInTable = true
+          #noClasses = false
+          style = "rrt"
+          tabWidth = 4
+      [markup.goldmark.renderer]
+          unsafe = true
+      [markup.goldmark.extensions]
+          definitionList = true
+          footnote = true
+          linkify = true
+          strikethrough = true
+          table = true
+          taskList = true
+          typographer = true
+        [markup.tableOfContents]
+          startLevel = 1
+          endLevel = 3
+          ordered = false
 
 
   # Sharing options
