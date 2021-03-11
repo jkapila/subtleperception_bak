@@ -33,11 +33,7 @@ Well I am born and bought up in *Bhilai, C.G* (a Tire-II City of ***India***). A
 I have graduated as a **Mechanical Engineer**, completed my **Post Grads in Thermal Engineering** which eventually took a twisted turn to make me ***Dive into Data Science***. I am presently working with _Ascena Retail GIC_, as _Senior Data Scientist_, where I am responsible to create End-to-End analytical solutions that help **The Business** make ***Informed Decisions***.
 
 
-{{< image classes="fancybox nocaption clear:both fig-50" src="/sitewide/pic_500x300.jpg" >}}
-
-
 I have worked on various projects from _Retail Analytics_ to _Fault Detection_ to _Forecasting_. Over the years my understanding of various concepts in **Machine Learning** and **Deep Learning** has gained those _Eyes of Observations_. This blog is my attempt to make those concepts more intuitive and easy, yet it would help you to form the basis of ***The Work*** we do that creates an ***Impact***.
 
-Also I am   keenly looking for a job change. Here is my <em>[Resume](/docs/jitin_kapila_resume.pdf)</em>.
 
 ***Till next time, stay observant, stay crazy, stay safe, stay healthy.***

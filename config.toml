@@ -11,7 +11,7 @@ paginate = 7
 canonifyurls = true
 
 [permalinks]
-  post = "/post/:slug/" 
+  post = "/post/:slug/"
   # post = "/:year/:month/:slug/"
 
 [taxonomies]
@@ -23,11 +23,11 @@ canonifyurls = true
   name = "Jitin Kapila"
   bio = "Subtle Observer in _Time_ and **Space**"
   job = "Data Science | Researcher"
-  location = "Bengaluru, IN"  
+  location = "Bengaluru, IN"
   # Your profile picture
-  picture = "sitewide/author_pic.jpg"
+  picture = "sitewide/display_image.jpg"
   twitter = "jitinkapila"
-  
+
 
 # Menu Configuration
 [[menu.main]]
@@ -127,8 +127,8 @@ canonifyurls = true
   # Define the behavior of the sidebar
   sidebarBehavior = 5
 
-  #### Current Cover behaviour 
-  ### For image 
+  #### Current Cover behaviour
+  ### For image
   # coverImage = "sitewide/background_img.png"
   # IsImage = true
   ### For javascript
@@ -147,7 +147,7 @@ canonifyurls = true
   # Display thumbnail image at the right of title in index pages (`right`, `left` or `bottom`)
   thumbnailImagePosition = "left"
 
-  # Automatically select the cover image 
+  # Automatically select the cover image
   autoThumbnailImage = true
 
   # Your favicon path, default is "/favicon.png"
@@ -157,17 +157,17 @@ canonifyurls = true
   # If you set this value to `true`, these positions swap.
   swapPaginator = false
 
-  # Custom CSS. Put here your custom CSS files.  
+  # Custom CSS. Put here your custom CSS files.
   # [[params.customCSS]]
   #   href = ["css/sketch.css","css/syntax.css","css/tabit.css"]
 
-  # Custom JS. Put here your custom JS files. 
+  # Custom JS. Put here your custom JS files.
   # [[params.customJS]]
   #    src = ["js/sketch.js"]
 
   # mathjax support for theme ( also will make support from katex inside)
   [params.math]
-    enable = true  
+    enable = true
     use = "mathjax"
 
   #custom toc to be used. this is work in progress
@@ -175,13 +175,13 @@ canonifyurls = true
 
   # enabling Emoji
   enableEmoji=true
-  
-  # Markup setup 
+
+  # Markup setup
   [markup]
     #  Have to learn more on this this usually breaks everything and the toc too
     # defaultMarkdownHandler = "blackfriday"
     # [markup.blackfriday]
-   
+
     defaultMarkdownHandler = "goldmark"
     [markup.goldmark]
       [markup.highlight]

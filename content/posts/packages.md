@@ -35,8 +35,12 @@ weight: 100
 Some off the shelf work
 <!--more-->
 
+* FeatureGen - A package with Utilities for creating features for forecasting . Refer [Docs](https://jkapila.github.io/featuregen/)
+
+* Misc Work - Lot of prior work but not well document can be found at [Github](https://github.com/jkapila/paper-codebase)
+
 * Pygemodels - A package for fitting Growth and Epidemiology Models in Python [Github](https://github.com/jkapila/pygemodels)
 
-* VCVN - R package for Variable  Selection, Curve Fitting, Variable Conversion and Normalisation [Github](https://github.com/jkapila/vcvn)
+* VCVN - R package for Variable  Selection, Curve Fitting, Variable Conversion and Normalization [Github](https://github.com/jkapila/vcvn)
 
 * Simulator Series in R - A Curve and Distribution Simulator in R [Github](https://github.com/jkapila/SimulatorInR) 

@@ -12,6 +12,7 @@ tags:
 keywords:
     - mape
     - regression
+    - adaptive
 
 clearReading: true
 thumbnailImage: /files/figures/Post_Mape_Plot.png
