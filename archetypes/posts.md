@@ -13,14 +13,14 @@ keywords:
     - blog
     - data science
 
-# thumbnailImage: image-1.png
-# thumbnailImagePosition: bottom # (right, left or bottom)
+# thumbnailImage: https://unsplash.com/photos/eveI7MOcSmw/download?force=true&w=640
+# thumbnailImagePosition: left # (right, left or bottom)
 # metaAlignment: center # right, left or center
-# coverImage: image-2.png
-# coverCaption: "A beautiful sunrise"
-# coverMeta: out # in/full
-# coverSize: full # partial/full
-# coverImage: image-2.png
+# coverImage: https://unsplash.com/photos/gpjvRZyavZc/download?force=true&w=1920
+# coverCaption: "Image by [a good person](https://unsplash.com/@mjessier)"
+# coverMeta: in # in/full
+# coverSize: partial # partial/full
+
 # gallery:
 #     - image-3.jpg "New York"
 #     - image-4.png "Paris"

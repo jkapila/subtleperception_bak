@@ -1,6 +1,6 @@
 ---
 title: "20210314 EPI and GE Models Python"
-date: 2021-03-14T02:32:34+05:30
+date: 2021-03-27
 draft: true
 categories:
     - category

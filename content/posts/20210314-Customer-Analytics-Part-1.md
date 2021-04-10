@@ -1,6 +1,6 @@
 ---
-title: "20210314 Customer Analytics Part 1"
-date: 2021-03-14T02:32:45+05:30
+title: "Customer Analytics - Part 1"
+date: 2021-04-14
 draft: true
 categories:
     - category
@@ -13,14 +13,13 @@ keywords:
     - blog
     - data science
 
-# thumbnailImage: image-1.png
-# thumbnailImagePosition: bottom # (right, left or bottom)
-# metaAlignment: center # right, left or center
-# coverImage: image-2.png
-# coverCaption: "A beautiful sunrise"
-# coverMeta: out # in/full
-# coverSize: full # partial/full
-# coverImage: image-2.png
+thumbnailImage: sitewide/empty_white.png 
+thumbnailImagePosition: right # (right, left or bottom)
+metaAlignment: center # right, left or center
+coverImage: sitewide/empty_transparent.png
+coverCaption: "Just Some space to fill in"
+coverMeta: in # in/out
+coverSize: full # partial/full
 # gallery:
 #     - image-3.jpg "New York"
 #     - image-4.png "Paris"

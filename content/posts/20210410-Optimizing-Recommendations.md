@@ -1,6 +1,6 @@
 ---
-title: "Optimized Recommendation"
-date: 2020-06-17
+title: "Optimizing Recommendations"
+date: 2021-05-10
 draft: true
 categories:
     - category
@@ -32,7 +32,7 @@ showTags: true
 showPagination: true
 showSocial: true
 showDate: true
-slug: optimized-recommendation
+slug: 20210410-Optimizing-Recommendations
 weight: 20
 
 # summary: "This is a custom summary and does *not* appear in the post."

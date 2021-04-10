@@ -1,6 +1,6 @@
 ---
 title: "FeatureGen - A package for Feature Utilities for Forecasting"
-date: 2021-03-14T02:32:08+05:30
+date: 2021-03-20
 draft: true
 categories:
     - portfolio
@@ -16,7 +16,7 @@ keywords:
 # thumbnailImage: image-1.png
 # thumbnailImagePosition: bottom # (right, left or bottom)
 # metaAlignment: center # right, left or center
-# coverImage: image-2.png
+# coverImage: https://github.com/jkapila/subtleperception/raw/master/static/sitewide/blue_universe_2.jpg
 # coverCaption: "A beautiful sunrise"
 # coverMeta: out # in/full
 # coverSize: full # partial/full

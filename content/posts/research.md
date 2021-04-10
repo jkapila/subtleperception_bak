@@ -13,11 +13,11 @@ tags:
     - clustering
 
 clearReading: true
-thumbnailImage: /sitewide/blue_universe_2.jpg 
+thumbnailImage: https://github.com/jkapila/subtleperception/raw/master/assets/images/blue_universe_2.jpg
 thumbnailImagePosition: right 
 autoThumbnailImage: yes 
 metaAlignment: center 
-coverImage: /sitewide/blue_universe_2.jpg
+coverImage: https://github.com/jkapila/subtleperception/raw/master/assets/images/blue_universe_2.jpg
 coverMeta: in 
 coverSize: partial 
 comments: false
@@ -26,7 +26,7 @@ showPagination: true
 showSocial: true
 showDate: false
 slug: researchs
-summary: "My Perception  Getting into Words over time!!!"
+summary: "Few Perception Getting into Words over time!!!"
 weight: 95
 dependency:
     -
@@ -69,5 +69,5 @@ During my course for learning Data Science over time, I have collected and refer
     
 > Distribution Assertive Regression (DAR). [Paper Link](https://arxiv.org/abs/1805.01618) and  [Blog Post]({{< ref "/posts/20180501-adaptive-regression" >}})
 
-* ***DAR*** is regression analysis in which we understand how a *fit* of regression varies over it's value. In this paper we resolve the **Regression in Parts** and estimate the new data based on *heuristic* methods like K-nearest Neighbor and Regression Equation.
+* ***DAR*** is regression analysis in which we understand how a *fit* of regression varies over it's value. In this paper we resolve the **Regression by Parts** and estimate the new data based on *heuristic* methods like K-nearest Neighbor and Regression Equation.
 
