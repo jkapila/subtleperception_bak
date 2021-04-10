@@ -2,21 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>python on Subtle Perception</title>
-    <link>https://subtleperception.netlify.app/tags/python/</link>
+    <link>https://jitinkapila.com/tags/python/</link>
     <description>Recent content in python on Subtle Perception</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 23 May 2020 17:50:31 +0530</lastBuildDate>
-    
-	<atom:link href="https://subtleperception.netlify.app/tags/python/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Sat, 23 May 2020 17:50:31 +0530</lastBuildDate><atom:link href="https://jitinkapila.com/tags/python/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Packages</title>
-      <link>https://subtleperception.netlify.app/posts/packages/</link>
+      <link>https://jitinkapila.com/posts/packages/</link>
       <pubDate>Sat, 23 May 2020 17:50:31 +0530</pubDate>
       
-      <guid>https://subtleperception.netlify.app/posts/packages/</guid>
+      <guid>https://jitinkapila.com/posts/packages/</guid>
       <description>&lt;p&gt;Some off the shelf work&lt;/p&gt;</description>
     </item>
     

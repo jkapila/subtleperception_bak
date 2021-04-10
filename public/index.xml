@@ -2,21 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Subtle Perception</title>
-    <link>https://subtleperception.netlify.app/</link>
+    <link>https://jitinkapila.com/</link>
     <description>Recent content on Subtle Perception</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 23 May 2020 17:50:31 +0530</lastBuildDate>
-    
-	<atom:link href="https://subtleperception.netlify.app/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Sun, 14 Mar 2021 02:26:51 +0530</lastBuildDate><atom:link href="https://jitinkapila.com/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Adaptive Regression</title>
-      <link>https://subtleperception.netlify.app/posts/adaptive-regression/</link>
+      <link>https://jitinkapila.com/posts/adaptive-regression/</link>
       <pubDate>Tue, 01 May 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://subtleperception.netlify.app/posts/adaptive-regression/</guid>
+      <guid>https://jitinkapila.com/posts/adaptive-regression/</guid>
       <description>&lt;span id=&#34;excerpt&#34;&gt;&lt;/span&gt;
     &lt;script&gt;
       new TypeIt(&#39;#excerpt&#39;, {
@@ -29,10 +25,10 @@
     
     <item>
       <title>Subtle Perception</title>
-      <link>https://subtleperception.netlify.app/posts/subtle-things/</link>
+      <link>https://jitinkapila.com/posts/subtle-things/</link>
       <pubDate>Sun, 14 Jan 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://subtleperception.netlify.app/posts/subtle-things/</guid>
+      <guid>https://jitinkapila.com/posts/subtle-things/</guid>
       <description>&lt;span id=&#34;excerpt&#34;&gt;&lt;/span&gt;
     &lt;script&gt;
       new TypeIt(&#39;#excerpt&#39;, {
@@ -45,10 +41,10 @@
     
     <item>
       <title>Research</title>
-      <link>https://subtleperception.netlify.app/posts/researchs/</link>
+      <link>https://jitinkapila.com/posts/researchs/</link>
       <pubDate>Mon, 15 Oct 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://subtleperception.netlify.app/posts/researchs/</guid>
+      <guid>https://jitinkapila.com/posts/researchs/</guid>
       <description>&lt;span id=&#34;excerpt&#34;&gt;&lt;/span&gt;
     &lt;script&gt;
       new TypeIt(&#39;#excerpt&#39;, {
@@ -61,19 +57,82 @@
     
     <item>
       <title>Packages</title>
-      <link>https://subtleperception.netlify.app/posts/packages/</link>
+      <link>https://jitinkapila.com/posts/packages/</link>
       <pubDate>Sat, 23 May 2020 17:50:31 +0530</pubDate>
       
-      <guid>https://subtleperception.netlify.app/posts/packages/</guid>
+      <guid>https://jitinkapila.com/posts/packages/</guid>
       <description>&lt;p&gt;Some off the shelf work&lt;/p&gt;</description>
     </item>
     
     <item>
+      <title>20210314 Forecasting Feature Utils</title>
+      <link>https://jitinkapila.com/post/20210314-forecasting-feature-utils/</link>
+      <pubDate>Sun, 14 Mar 2021 02:26:51 +0530</pubDate>
+      
+      <guid>https://jitinkapila.com/post/20210314-forecasting-feature-utils/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>20210314 EPI and GE Models Python</title>
+      <link>https://jitinkapila.com/post/20210314-epi-and-ge-models-python/</link>
+      <pubDate>Sun, 14 Mar 2021 02:26:24 +0530</pubDate>
+      
+      <guid>https://jitinkapila.com/post/20210314-epi-and-ge-models-python/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>20210314 Customer Analytics Part 1</title>
+      <link>https://jitinkapila.com/post/20210314-customer-analytics-part-1/</link>
+      <pubDate>Sun, 14 Mar 2021 02:25:31 +0530</pubDate>
+      
+      <guid>https://jitinkapila.com/post/20210314-customer-analytics-part-1/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>20210314 an Environment for RL Classification</title>
+      <link>https://jitinkapila.com/post/20210314-an-environment-for-rl-classification/</link>
+      <pubDate>Sun, 14 Mar 2021 02:25:14 +0530</pubDate>
+      
+      <guid>https://jitinkapila.com/post/20210314-an-environment-for-rl-classification/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>20210314 Crosstab Sparsity</title>
+      <link>https://jitinkapila.com/post/20210314-crosstab-sparsity/</link>
+      <pubDate>Sun, 14 Mar 2021 02:24:31 +0530</pubDate>
+      
+      <guid>https://jitinkapila.com/post/20210314-crosstab-sparsity/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>20210314 Gemodels</title>
+      <link>https://jitinkapila.com/post/20210314-gemodels/</link>
+      <pubDate>Sun, 14 Mar 2021 02:24:09 +0530</pubDate>
+      
+      <guid>https://jitinkapila.com/post/20210314-gemodels/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>20210314 Featuregen</title>
+      <link>https://jitinkapila.com/post/20210314-featuregen/</link>
+      <pubDate>Sun, 14 Mar 2021 02:23:55 +0530</pubDate>
+      
+      <guid>https://jitinkapila.com/post/20210314-featuregen/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>About</title>
-      <link>https://subtleperception.netlify.app/about/</link>
+      <link>https://jitinkapila.com/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://subtleperception.netlify.app/about/</guid>
+      <guid>https://jitinkapila.com/about/</guid>
       <description>-- As Lao Tzu says:
 If you want to shrink something, you must first allow it to expand.
 If you want to get rid of something, you must first allow it to flourish.

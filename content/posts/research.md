@@ -67,7 +67,7 @@ During my course for learning Data Science over time, I have collected and refer
 
 
     
-> Distribution Assertive Regression (DAR). [Paper Link](https://arxiv.org/abs/1805.01618) and  [Blog Post]({{< ref "/posts/adaptive-regression" >}})
+> Distribution Assertive Regression (DAR). [Paper Link](https://arxiv.org/abs/1805.01618) and  [Blog Post]({{< ref "/posts/20180501-adaptive-regression" >}})
 
 * ***DAR*** is regression analysis in which we understand how a *fit* of regression varies over it's value. In this paper we resolve the **Regression in Parts** and estimate the new data based on *heuristic* methods like K-nearest Neighbor and Regression Equation.
 

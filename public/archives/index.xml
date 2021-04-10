@@ -2,13 +2,9 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Archives on Subtle Perception</title>
-    <link>https://subtleperception.netlify.app/archives/</link>
+    <link>https://jitinkapila.com/archives/</link>
     <description>Recent content in Archives on Subtle Perception</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    
-	<atom:link href="https://subtleperception.netlify.app/archives/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <language>en-us</language><atom:link href="https://jitinkapila.com/archives/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

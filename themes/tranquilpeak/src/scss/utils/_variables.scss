@@ -3,8 +3,10 @@
 
 
 // Font families
-$open-sans:             'Roboto', 'Open Sans';
-$open-sans-sans-serif:  'Roboto','Open Sans', sans-serif;
+$open-sans:             'Roboto', 'Montserrat', sans-serifs;
+$roboto:                'Roboto', sans-serif;
+$poppins:               'Poppins','Roboto', sans-serif;
+$open-sans-sans-serif:  'Sora','Poppins','Roboto', sans-serif;
 $merriweather-serif:    'Merriweather', serif;
 $menlo:                 Menlo, Consolas, monospace;
 
@@ -23,10 +25,10 @@ $font-families: (
    'code':              $menlo,
    'caption':           $merriweather-serif,
    'image-gallery':     $open-sans,
-   'post-header-cover': $merriweather-serif,
+   'post-header-cover': $roboto,
    'post-meta':         $open-sans-sans-serif,
-   'post-content':      $merriweather-serif,
-   'post-excerpt-link': $open-sans-sans-serif,
+   'post-content':      $poppins,
+   'post-excerpt-link': $roboto,
    'highlight':         $menlo,
    // layout
    'sidebar':           $open-sans-sans-serif

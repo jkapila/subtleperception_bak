@@ -2,21 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>regression on Subtle Perception</title>
-    <link>https://subtleperception.netlify.app/categories/regression/</link>
+    <link>https://jitinkapila.com/categories/regression/</link>
     <description>Recent content in regression on Subtle Perception</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 01 May 2018 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://subtleperception.netlify.app/categories/regression/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Tue, 01 May 2018 00:00:00 +0000</lastBuildDate><atom:link href="https://jitinkapila.com/categories/regression/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Adaptive Regression</title>
-      <link>https://subtleperception.netlify.app/posts/adaptive-regression/</link>
+      <link>https://jitinkapila.com/posts/adaptive-regression/</link>
       <pubDate>Tue, 01 May 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://subtleperception.netlify.app/posts/adaptive-regression/</guid>
+      <guid>https://jitinkapila.com/posts/adaptive-regression/</guid>
       <description>&lt;span id=&#34;excerpt&#34;&gt;&lt;/span&gt;
     &lt;script&gt;
       new TypeIt(&#39;#excerpt&#39;, {

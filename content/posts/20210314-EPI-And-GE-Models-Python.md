@@ -1,6 +1,6 @@
 ---
-title: "Crosstab Sparsity"
-date: 2020-06-08T21:54:55+05:30
+title: "20210314 EPI and GE Models Python"
+date: 2021-03-14T02:32:34+05:30
 draft: true
 categories:
     - category
@@ -32,8 +32,8 @@ showTags: true
 showPagination: true
 showSocial: true
 showDate: true
-slug: crosstab-sparsity
-weight: 1
+slug: 20210314-EPI-And-GE-Models-Python
+weight: 20
 
 # summary: "This is a custom summary and does *not* appear in the post."
 
@@ -48,11 +48,13 @@ dependency:
 ---
 
 {{< typeit >}}
-Clustering is hard. And **harder** is defining its behaviour. 
+Some text should be here
 {{< /typeit >}}
+
+
 <!--more-->
 <!--toc--> 
-
-<!-- This is handy for all the shortcodes ;) -->
-
 # To disable toc, delete this the toc identifire    
+
+
+Here is your space to write.........

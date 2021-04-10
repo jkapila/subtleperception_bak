@@ -43,8 +43,23 @@
 
 {{- $tag := .Get 0 | default "tagthis" }}
 {{- $title := .Get 1 | default "Title" }}
+{{- $condstate := .Get 2 | default "none" }}
 
-{{- $clickevent := printf "expander(this, '%s')" $tag| safeJS -}} 
+{{ if (isset $condstate "block")}}
+<style>
+.content {
+  display: block;
+  width: inherit;
+  padding: .5em;
+  text-align: left;
+  background-color: #f1f1f1;;
+  margin: 0.1rem .2em ;
+}
+
+</style>
+{{ end }}
+
+{{- $clickevent := printf "expander(this, '%s')" $tag | safeJS -}} 
 
 <button class="collapsible" onclick= {{$clickevent}} >{{ $title }}</button>
 <div id="{{$tag}}" class="content">
