@@ -7,12 +7,12 @@
 <!-- <script async src="https://unpkg.com/mermaid@8.2.3/dist/mermaid.min.js"></script>
  -->
 
-<div class="mermaid" theme="dark" align="{{ if .Get "align" }}{{ .Get "align" }}{{ else }}center{{ end }}">
+<div class="mermaid" theme="neutral" align="{{ if .Get "align" }}{{ .Get "align" }}{{ else }}center{{ end }}">
     {{ safeHTML .Inner }}
 </div> 
 
 <script>
-mermaid.initialize({securityLevel: 'loose', theme: 'neutral',
+mermaid.initialize({ theme: 'neutral',
 
         cloneCssStyles: false,
         startOnLoad:true,

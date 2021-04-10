@@ -31,7 +31,7 @@ slug: adaptive-regression
 weight: 20
 summary: "When we can improve stats by simple ways."
 dependency:
-    - mermaid
+    - 
 ---
 
 {{< typeit id="excerpt" >}}
@@ -92,7 +92,7 @@ Lets look at BostonHousing data from “mlbench” package in R.
 
 Here the MAPE is calculated for each decile split of ordered target variable. As you can observe it is following the bath tub curve. Hence the validates our hypothesis that the regression method is not able to understand much about the data at the either ends of the distribution.
 
-# Analysis and Framework
+# Analysis
 
 Now the DAR framework essentially fixes this weakness of regression method and understands the behavior of data which is stable and can be tweak in a fashion that can be use in general practice.
 
@@ -113,42 +113,9 @@ Now you might be thinking while applying regression this sounds good but how wil
 
 So now we know how we can improve the prediction power of data for regression. 
 
+Refer flowchart below for the framework
 
-{{< mermaid >}}
-graph TB
-    
-    subgraph Testing
-        p1(Finding bucket of model to choose)
-        p1 --> p2([Making predictions <br> based on selected model for inference])
-        p2 --> p3(Consolidate final score of prediction)
-    end
-
-    subgraph Training
-        md([Fitting a <br>Regression model])==> di
-        di{Binning Data via <br/> evaluating Distribution <br/> MAPE values }
-        di --> md2([Fitting a Buckteing model <br/> to Binned MAPE Buckets])
-        md2 --> md3([Fitting Regression <br> Models on Binned Data])
-        md == Keeping main<br/>model ==> ro        
-        md3 ==> ro(Final Models <br> Binning Data Models + <br> Set of Regressoin Models)
-    end
-
-    
-    od([Data Input]) -- Training<br> Data--> md
-    od -- Testing<br> Data--> p1
-    ro -.-> p1
-    ro -.-> p2
-
-    classDef green fill:#9f6,stroke:#333,stroke-width:2px;
-    classDef yellow fill:#ff6,stroke:#333,stroke-width:2px;
-    classDef blue fill:#00f,stroke:#333,stroke-width:2px,color:#fff;
-    classDef orange fill:#f96,stroke:#333,stroke-width:4px;
-    class md,md2,md3 green
-    class di orange
-    class p1,p2 yellow
-    class ro,p3 blue
-{{< /mermaid >}}
-
-# Code
+# Code and Framework
 
 Here are the some goodies.The code for the above analysis and plotting fucntions:
 <br></br>
@@ -159,6 +126,9 @@ Here are the some goodies.The code for the above analysis and plotting fucntions
 {{< /tabit >}}
 {{< tabit name="Rcode" >}}
 {{< gist jkapila ccc3d0f05fce86ea3075dc7190f8c181 >}}
+{{< /tabit >}}
+{{< tabit name="Flowchart" >}}
+[![](https://mermaid.ink/img/eyJjb2RlIjoiZ3JhcGggVEJcbiAgICBcbiAgICBzdWJncmFwaCBUZXN0aW5nXG4gICAgICAgIHAxKEZpbmRpbmcgYnVja2V0IG9mIG1vZGVsIHRvIGNob29zZSlcbiAgICAgICAgcDEgLS0-IHAyKFtNYWtpbmcgcHJlZGljdGlvbnMgPGJyPiBiYXNlZCBvbiBzZWxlY3RlZCBtb2RlbCBmb3IgaW5mZXJlbmNlXSlcbiAgICAgICAgcDIgLS0-IHAzKENvbnNvbGlkYXRlIGZpbmFsIHNjb3JlIG9mIHByZWRpY3Rpb24pXG4gICAgZW5kXG5cbiAgICBzdWJncmFwaCBUcmFpbmluZ1xuICAgICAgICBtZChbRml0dGluZyBhIDxicj5SZWdyZXNzaW9uIG1vZGVsXSk9PT4gZGlcbiAgICAgICAgZGl7QmlubmluZyBEYXRhIHZpYSA8YnIvPiBldmFsdWF0aW5nIERpc3RyaWJ1dGlvbiA8YnIvPiBNQVBFIHZhbHVlcyB9XG4gICAgICAgIGRpIC0tPiBtZDIoW0ZpdHRpbmcgYSBCdWNrdGVpbmcgbW9kZWwgPGJyLz4gdG8gQmlubmVkIE1BUEUgQnVja2V0c10pXG4gICAgICAgIG1kMiAtLT4gbWQzKFtGaXR0aW5nIFJlZ3Jlc3Npb24gPGJyPiBNb2RlbHMgb24gQmlubmVkIERhdGFdKVxuICAgICAgICBtZCA9PSBLZWVwaW5nIG1haW48YnIvPm1vZGVsID09PiBybyAgICAgICAgXG4gICAgICAgIG1kMyA9PT4gcm8oRmluYWwgTW9kZWxzIDxicj4gQmlubmluZyBEYXRhIE1vZGVscyArIDxicj4gU2V0IG9mIFJlZ3Jlc3NvaW4gTW9kZWxzKVxuICAgIGVuZFxuXG4gICAgXG4gICAgb2QoW0RhdGEgSW5wdXRdKSAtLSBUcmFpbmluZzxicj4gRGF0YS0tPiBtZFxuICAgIG9kIC0tIFRlc3Rpbmc8YnI-IERhdGEtLT4gcDFcbiAgICBybyAtLi0-IHAxXG4gICAgcm8gLS4tPiBwMlxuXG4gICAgY2xhc3NEZWYgZ3JlZW4gZmlsbDojOWY2LHN0cm9rZTojMzMzLHN0cm9rZS13aWR0aDoycHg7XG4gICAgY2xhc3NEZWYgeWVsbG93IGZpbGw6I2ZmNixzdHJva2U6IzMzMyxzdHJva2Utd2lkdGg6MnB4O1xuICAgIGNsYXNzRGVmIGJsdWUgZmlsbDojMDBmLHN0cm9rZTojMzMzLHN0cm9rZS13aWR0aDoycHgsY29sb3I6I2ZmZjtcbiAgICBjbGFzc0RlZiBvcmFuZ2UgZmlsbDojZjk2LHN0cm9rZTojMzMzLHN0cm9rZS13aWR0aDo0cHg7XG4gICAgY2xhc3MgbWQsbWQyLG1kMyBncmVlblxuICAgIGNsYXNzIGRpIG9yYW5nZVxuICAgIGNsYXNzIHAxLHAyIHllbGxvd1xuICAgIGNsYXNzIHJvLHAzIGJsdWUiLCJtZXJtYWlkIjp7InRoZW1lIjoiZGVmYXVsdCJ9LCJ1cGRhdGVFZGl0b3IiOmZhbHNlfQ)](https://mermaid-js.github.io/mermaid-live-editor/#/edit/eyJjb2RlIjoiZ3JhcGggVEJcbiAgICBcbiAgICBzdWJncmFwaCBUZXN0aW5nXG4gICAgICAgIHAxKEZpbmRpbmcgYnVja2V0IG9mIG1vZGVsIHRvIGNob29zZSlcbiAgICAgICAgcDEgLS0-IHAyKFtNYWtpbmcgcHJlZGljdGlvbnMgPGJyPiBiYXNlZCBvbiBzZWxlY3RlZCBtb2RlbCBmb3IgaW5mZXJlbmNlXSlcbiAgICAgICAgcDIgLS0-IHAzKENvbnNvbGlkYXRlIGZpbmFsIHNjb3JlIG9mIHByZWRpY3Rpb24pXG4gICAgZW5kXG5cbiAgICBzdWJncmFwaCBUcmFpbmluZ1xuICAgICAgICBtZChbRml0dGluZyBhIDxicj5SZWdyZXNzaW9uIG1vZGVsXSk9PT4gZGlcbiAgICAgICAgZGl7QmlubmluZyBEYXRhIHZpYSA8YnIvPiBldmFsdWF0aW5nIERpc3RyaWJ1dGlvbiA8YnIvPiBNQVBFIHZhbHVlcyB9XG4gICAgICAgIGRpIC0tPiBtZDIoW0ZpdHRpbmcgYSBCdWNrdGVpbmcgbW9kZWwgPGJyLz4gdG8gQmlubmVkIE1BUEUgQnVja2V0c10pXG4gICAgICAgIG1kMiAtLT4gbWQzKFtGaXR0aW5nIFJlZ3Jlc3Npb24gPGJyPiBNb2RlbHMgb24gQmlubmVkIERhdGFdKVxuICAgICAgICBtZCA9PSBLZWVwaW5nIG1haW48YnIvPm1vZGVsID09PiBybyAgICAgICAgXG4gICAgICAgIG1kMyA9PT4gcm8oRmluYWwgTW9kZWxzIDxicj4gQmlubmluZyBEYXRhIE1vZGVscyArIDxicj4gU2V0IG9mIFJlZ3Jlc3NvaW4gTW9kZWxzKVxuICAgIGVuZFxuXG4gICAgXG4gICAgb2QoW0RhdGEgSW5wdXRdKSAtLSBUcmFpbmluZzxicj4gRGF0YS0tPiBtZFxuICAgIG9kIC0tIFRlc3Rpbmc8YnI-IERhdGEtLT4gcDFcbiAgICBybyAtLi0-IHAxXG4gICAgcm8gLS4tPiBwMlxuXG4gICAgY2xhc3NEZWYgZ3JlZW4gZmlsbDojOWY2LHN0cm9rZTojMzMzLHN0cm9rZS13aWR0aDoycHg7XG4gICAgY2xhc3NEZWYgeWVsbG93IGZpbGw6I2ZmNixzdHJva2U6IzMzMyxzdHJva2Utd2lkdGg6MnB4O1xuICAgIGNsYXNzRGVmIGJsdWUgZmlsbDojMDBmLHN0cm9rZTojMzMzLHN0cm9rZS13aWR0aDoycHgsY29sb3I6I2ZmZjtcbiAgICBjbGFzc0RlZiBvcmFuZ2UgZmlsbDojZjk2LHN0cm9rZTojMzMzLHN0cm9rZS13aWR0aDo0cHg7XG4gICAgY2xhc3MgbWQsbWQyLG1kMyBncmVlblxuICAgIGNsYXNzIGRpIG9yYW5nZVxuICAgIGNsYXNzIHAxLHAyIHllbGxvd1xuICAgIGNsYXNzIHJvLHAzIGJsdWUiLCJtZXJtYWlkIjp7InRoZW1lIjoiZGVmYXVsdCJ9LCJ1cGRhdGVFZGl0b3IiOmZhbHNlfQ)
 {{< /tabit >}}
 {{< /multitabs >}}
 
