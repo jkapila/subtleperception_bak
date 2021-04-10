@@ -3,7 +3,7 @@
 	{{ if gt $dependencyLen 0 }}
 		{{ range $k, $v := . }}
 			{{ if eq $v "mermaid"}}
-				<script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/8.5.1/mermaid.min.js" integrity="sha256-l28DspUteK5IQ/BJAooA6UHmm/m4kYuJ4NvoeEmz3K0=" crossorigin="anonymous"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/8.9.2/mermaid.min.js" integrity="sha512-6Wa+B9B3RYe0RtUPHHpg6RTnDBMLUq1hdoJtNJfkfNOaipetnb30xQPd1nTQDBMF0dt7lOb3XmAq62Dqqr57Zw==" crossorigin="anonymous"></script>
 			{{else if eq $v "plotly"}}
 				<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
 			{{else if eq $v "d3"}}
