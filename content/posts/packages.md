@@ -15,12 +15,12 @@ keywords:
 
 
 clearReading: true
-thumbnailImage: /sitewide/background_img.png
+thumbnailImage: https://unsplash.com/photos/DbwYNr8RPbg/download?force=true&w=1920
 thumbnailImagePosition: left 
 autoThumbnailImage: yes 
 metaAlignment: center 
-coverImage: /sitewide/background_img.png
-coverCaption: "Made with Particle JS"
+coverImage: https://unsplash.com/photos/DbwYNr8RPbg/download?force=true&w=1920
+coverCaption: "Image by [_resul_](https://unsplash.com/@resul) at [Unsplash](https://unsplash.com/)"
 coverMeta: in 
 coverSize: partial 
 comments: false

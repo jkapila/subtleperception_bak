@@ -13,11 +13,12 @@ tags:
     - clustering
 
 clearReading: true
-thumbnailImage: https://github.com/jkapila/subtleperception/raw/master/assets/images/blue_universe_2.jpg
+thumbnailImage: https://unsplash.com/photos/fUnfEz3VLv4/download?force=true&w=1920
 thumbnailImagePosition: right 
 autoThumbnailImage: yes 
 metaAlignment: center 
-coverImage: https://github.com/jkapila/subtleperception/raw/master/assets/images/blue_universe_2.jpg
+coverImage: https://unsplash.com/photos/fUnfEz3VLv4/download?force=true&w=1920
+coverCaption: Image by [_Graham_](https://unsplash.com/@freedomstudios) at [Unsplash](https://unsplash.com/)
 coverMeta: in 
 coverSize: partial 
 comments: false
