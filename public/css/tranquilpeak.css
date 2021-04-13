@@ -132,14 +132,14 @@ pre > code {
   overflow-x: auto;
   border-radius: 1rem;
   line-height: 2.6rem;
-  font-size: 1.6rem; }
+  font-size: 1.4rem; }
 
 code {
   font-size: 1.5rem;
   display: inline-block;
   font-family: Menlo, Consolas, monospace;
   font-weight: 400;
-  background-color: #050814;
+  background-color: #f7f8f8;
   padding: 0 10px; }
 
 blockquote {
@@ -1691,7 +1691,7 @@ figure.highlight,
     border-right: 1px solid;
     padding: 0.3em 15px;
     line-height: 2.2rem;
-    font-size: 1.6rem; }
+    font-size: 1.4rem; }
     figure.highlight .gutter pre,
     .codeblock .gutter pre {
       color: #aaaaaa; }
@@ -1702,14 +1702,14 @@ figure.highlight,
     figure.highlight .code pre,
     .codeblock .code pre {
       line-height: 2.2rem;
-      font-size: 1.6rem;
+      font-size: 1.4rem;
       max-width: calc(900px - 50px);
       overflow-x: auto;
       overflow-y: hidden; }
   figure.highlight .line,
   .codeblock .line {
     height: 2.2rem;
-    font-size: 1.6rem; }
+    font-size: 1.4rem; }
 
 .codeblock--tabbed figure.highlight,
 .codeblock--tabbed pre > code {
@@ -2849,14 +2849,14 @@ a.tag--small,
     transform: translateY(-50%); }
 
 pre > code {
-  background: #050814;
-  color: #eaeaea; }
+  background: #f7f8f8;
+  color: #333; }
 
 pre > code.codeblock {
   overflow-x: auto; }
 
 code {
-  background-color: #050814; }
+  background-color: #f7f8f8; }
 
 .codeblock--tabbed figcaption .tab.active {
   background: #349ef3;
@@ -2864,15 +2864,15 @@ code {
 
 figure.highlight,
 .codeblock {
-  background: #050814;
-  color: #eaeaea; }
+  background: #f7f8f8;
+  color: #333; }
   figure.highlight figcaption,
   .codeblock figcaption {
-    background: #050814;
+    background: #f7f8f8;
     color: #999999; }
   figure.highlight .gutter,
   .codeblock .gutter {
-    background: #050814;
+    background: #f7f8f8;
     border-right-color: #e6e6e6; }
     figure.highlight .gutter .line,
     .codeblock .gutter .line {
@@ -2917,7 +2917,7 @@ figure.highlight,
     color: #0086b3; }
   figure.highlight.bash .code .variable,
   .codeblock.bash .code .variable {
-    color: #eaeaea; }
+    color: #333; }
   figure.highlight.bash .code .title,
   .codeblock.bash .code .title {
     color: #795da3; }
@@ -2953,10 +2953,10 @@ figure.highlight,
   .codeblock.cpp .code .meta-keyword,
   .codeblock.c .code .meta-keyword {
     color: #a71d5d; }
-  figure.highlight.cpp .code .title ,
-  figure.highlight.c .code .title ,
-  .codeblock.cpp .code .title ,
-  .codeblock.c .code .title  {
+  figure.highlight.cpp .code .title,
+  figure.highlight.c .code .title,
+  .codeblock.cpp .code .title,
+  .codeblock.c .code .title {
     color: #795da3; }
   figure.highlight.cpp .code .number,
   figure.highlight.cpp .code .built_in,
@@ -2971,7 +2971,7 @@ figure.highlight,
   figure.highlight.cs .code .preprocessor .keyword,
   .codeblock.cs .code .preprocessor,
   .codeblock.cs .code .preprocessor .keyword {
-    color: #eaeaea; }
+    color: #333; }
   figure.highlight.cs .code .title,
   .codeblock.cs .code .title {
     color: #795da3; }
@@ -3005,7 +3005,7 @@ figure.highlight,
   figure.highlight.css .code .value,
   .codeblock.css .code .attr_selector,
   .codeblock.css .code .value {
-    color: #eaeaea; }
+    color: #333; }
   figure.highlight.css .code .id,
   figure.highlight.css .code .class,
   figure.highlight.css .code .pseudo,
@@ -3059,7 +3059,7 @@ figure.highlight,
   figure.highlight.ini .code .keyword,
   .codeblock.ini .code .value,
   .codeblock.ini .code .keyword {
-    color: #eaeaea; }
+    color: #333; }
   figure.highlight.java .code .title,
   .codeblock.java .code .title {
     color: #795da3; }
@@ -3094,7 +3094,7 @@ figure.highlight,
     color: #a71d5d; }
   figure.highlight.js .code .tag .title,
   .codeblock.js .code .tag .title {
-    color: #eaeaea; }
+    color: #333; }
   figure.highlight.js .code .regexp,
   .codeblock.js .code .regexp {
     color: #df5000; }
@@ -3113,7 +3113,7 @@ figure.highlight,
     color: #0086b3; }
   figure.highlight.mak .code .constant,
   .codeblock.mak .code .constant {
-    color: #eaeaea; }
+    color: #333; }
   figure.highlight.mak .code .title,
   .codeblock.mak .code .title {
     color: #795da3; }
@@ -3164,7 +3164,7 @@ figure.highlight,
     color: #183691; }
   figure.highlight.nginx .code .variable,
   .codeblock.nginx .code .variable {
-    color: #eaeaea; }
+    color: #333; }
   figure.highlight.objectivec .code .preprocessor,
   figure.highlight.objectivec .code .meta,
   .codeblock.objectivec .code .preprocessor,
@@ -3215,14 +3215,40 @@ figure.highlight,
     color: #795da3; }
   figure.highlight.python .code .decorator,
   figure.highlight.python .code .title,
-  figure.highlight.python .code .meta,
   .codeblock.python .code .decorator,
-  .codeblock.python .code .title,
-  .codeblock.python .code .meta {
+  .codeblock.python .code .title {
     color: #795da3; }
   figure.highlight.python .code .number,
   .codeblock.python .code .number {
     color: #0086b3; }
+  figure.highlight.python .code .keyword,
+  .codeblock.python .code .keyword {
+    color: #333; }
+  figure.highlight.python .code .meta,
+  .codeblock.python .code .meta {
+    color: #a71d5d; }
+  figure.highlight.r .code .title,
+  figure.highlight.r .code .meta, figure.highlight.r .code .literal, figure.highlight.r .code .string,
+  .codeblock.r .code .title,
+  .codeblock.r .code .meta,
+  .codeblock.r .code .literal,
+  .codeblock.r .code .string {
+    color: #795da3; }
+  figure.highlight.r .code .number,
+  .codeblock.r .code .number {
+    color: #0086b3; }
+  figure.highlight.r .code .keyword, figure.highlight.r .code .dplyr, figure.highlight.r .code .built_in,
+  .codeblock.r .code .keyword,
+  .codeblock.r .code .dplyr,
+  .codeblock.r .code .built_in {
+    color: #a71d5d; }
+  figure.highlight.r .code .pipe, figure.highlight.r .code .assign, figure.highlight.r .code .formula, figure.highlight.r .code .doctag, figure.highlight.r .code .fun-param,
+  .codeblock.r .code .pipe,
+  .codeblock.r .code .assign,
+  .codeblock.r .code .formula,
+  .codeblock.r .code .doctag,
+  .codeblock.r .code .fun-param {
+    color: #333; }
   figure.highlight.ruby .code .parent,
   figure.highlight.ruby .code .title,
   .codeblock.ruby .code .parent,
@@ -3248,7 +3274,7 @@ figure.highlight,
   figure.highlight.xml .tag, figure.highlight.html .tag,
   .codeblock.xml .tag,
   .codeblock.html .tag {
-    color: #eaeaea; }
+    color: #333; }
   figure.highlight.xml .value, figure.highlight.html .value,
   .codeblock.xml .value,
   .codeblock.html .value {
@@ -3329,7 +3355,7 @@ figure.highlight,
     color: #0086b3; }
   figure.highlight.scss .variable,
   .codeblock.scss .variable {
-    color: #eaeaea; }
+    color: #333; }
   figure.highlight.scss .built_in,
   .codeblock.scss .built_in {
     color: #df5000; }

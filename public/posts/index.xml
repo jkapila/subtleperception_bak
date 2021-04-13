@@ -24,19 +24,12 @@
     </item>
     
     <item>
-      <title>Subtle Perception</title>
-      <link>https://jitinkapila.com/posts/subtle-things/</link>
-      <pubDate>Sun, 14 Jan 2018 00:00:00 +0000</pubDate>
+      <title>Packages</title>
+      <link>https://jitinkapila.com/posts/packages/</link>
+      <pubDate>Sat, 23 May 2020 17:50:31 +0530</pubDate>
       
-      <guid>https://jitinkapila.com/posts/subtle-things/</guid>
-      <description>&lt;span id=&#34;excerpt&#34;&gt;&lt;/span&gt;
-    &lt;script&gt;
-      new TypeIt(&#39;#excerpt&#39;, {
-        strings: &#34;Hello All to my first Blog!&#34;,
-        speed: 50,
-        waitUntilVisible: true
-      }).go();
-    &lt;/script&gt;</description>
+      <guid>https://jitinkapila.com/posts/packages/</guid>
+      <description>&lt;p&gt;Some off the shelf work&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -56,12 +49,19 @@
     </item>
     
     <item>
-      <title>Packages</title>
-      <link>https://jitinkapila.com/posts/packages/</link>
-      <pubDate>Sat, 23 May 2020 17:50:31 +0530</pubDate>
+      <title>Subtle Perception</title>
+      <link>https://jitinkapila.com/posts/subtle-things/</link>
+      <pubDate>Sun, 14 Jan 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://jitinkapila.com/posts/packages/</guid>
-      <description>&lt;p&gt;Some off the shelf work&lt;/p&gt;</description>
+      <guid>https://jitinkapila.com/posts/subtle-things/</guid>
+      <description>&lt;span id=&#34;excerpt&#34;&gt;&lt;/span&gt;
+    &lt;script&gt;
+      new TypeIt(&#39;#excerpt&#39;, {
+        strings: &#34;Hello All to my first Blog!&#34;,
+        speed: 50,
+        waitUntilVisible: true
+      }).go();
+    &lt;/script&gt;</description>
     </item>
     
   </channel>

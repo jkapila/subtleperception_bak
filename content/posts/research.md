@@ -28,7 +28,7 @@ showSocial: true
 showDate: false
 slug: researchs
 summary: "Few Perception Getting into Words over time!!!"
-weight: 95
+weight: 51
 dependency:
     -
 

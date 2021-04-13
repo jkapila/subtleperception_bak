@@ -15,12 +15,13 @@ keywords:
 
 
 clearReading: true
-thumbnailImage: https://unsplash.com/photos/DbwYNr8RPbg/download?force=true&w=1920
+thumbnailImage: https://unsplash.com/photos/npxXWgQ33ZQ/download?force=true&w=640
 thumbnailImagePosition: left 
 autoThumbnailImage: yes 
 metaAlignment: center 
-coverImage: https://unsplash.com/photos/DbwYNr8RPbg/download?force=true&w=1920
-coverCaption: "Image by [_resul_](https://unsplash.com/@resul) at [Unsplash](https://unsplash.com/)"
+coverImage: https://unsplash.com/photos/npxXWgQ33ZQ/download?force=true&w=1920
+coverCaption: "Image by [_Glenn Carstens-Peters
+_](https://unsplash.com/@glenncarstenspeters) at [Unsplash](https://unsplash.com/)"
 coverMeta: in 
 coverSize: partial 
 comments: false
@@ -29,7 +30,7 @@ showPagination: true
 showSocial: true
 showDate: false
 slug: packages
-weight: 100
+weight: 50
 ---
 
 Some off the shelf work

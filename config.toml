@@ -7,7 +7,7 @@ title = "Subtle Perception"
 theme = "tranquilpeak"
 disqusShortname = "jitinkapila"
 googleAnalytics = "UA-167599979-1"
-paginate = 7
+paginate = 10
 canonifyurls = true
 
 [permalinks]
@@ -219,10 +219,10 @@ canonifyurls = true
     icon = "fab fa-twitter-square"
     url = "https://twitter.com/intent/tweet?text=%s"
 
-  [[params.sharingOptions]]
-    name = "Google+"
-    icon = "fab fa-google-plus"
-    url = "https://plus.google.com/share?url=%s"
+#  [[params.sharingOptions]]
+#    name = "Google+"
+#    icon = "fab fa-google-plus"
+#    url = "https://plus.google.com/share?url=%s"
 
   [[params.sharingOptions]]
     name = "Linkedin"

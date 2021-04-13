@@ -19,7 +19,7 @@ showTags: true
 showPagination: true
 showSocial: true
 showDate: true
-weight: 30
+weight: 51
 slug: subtle-things
 # summary: "Some basic"
 dependency:
