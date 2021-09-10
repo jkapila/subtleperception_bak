@@ -1,6 +1,7 @@
 ---
 title: "A Basic Trageting Problem"
 date: 2021-04-16
+draft: true
 categories:
     - classification
     - machine learning

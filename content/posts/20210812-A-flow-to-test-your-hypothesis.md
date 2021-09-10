@@ -8,7 +8,6 @@ categories:
 
 tags:
     - hypothesis
-    - plot
     - python
     - eda
 
@@ -20,7 +19,7 @@ keywords:
     - data science
 
 thumbnailImage: /files/figures/TukeyHSD.png
-thumbnailImagePosition: right 
+thumbnailImagePosition: left 
 autoThumbnailImage: yes 
 metaAlignment: center 
 coverImage: https://github.com/jkapila/subtleperception/raw/master/assets/images/background_img.png
@@ -67,7 +66,9 @@ Well glad you thought. Before that all were doing what is called as *_Hypothesis
 </br>
 {{% expand "More on RCTs and ODs" %}}
 
-Now let me now not hijack the discussion to what is *RCTs* and *Observational Data (ODs)* as it is more of _Philosphical Reasoning_ rather than other quality of data, but essentially what we are trying to find  
+Now let me now not hijack the discussion to what is *RCTs* and *Observational Data (ODs)* as it is more of _Philosphical Reasoning_ rather than other quality of data, but essentially what we are trying to find is that can we by, using stats, identify *interesting patterns* in data. 
+
+The only thing happens wit RCT data is that we tend to believe these intresting patterns coincide with some sort of _'Cause-Effect'_  kind of relationship. But essentially due to bia nature of ODs, we certainly cant conclude this. And hence, can only find _intresting_ patterns.
 
 {{% /expand %}}
 
@@ -80,14 +81,10 @@ So lets directly jump to how to follow this procedure. We'll be using `bioinfoki
 
 {{< codeblock "anova_test.py" "python" "" "anova_test.py" >}}
 from bioinfokit import analys
-import pandas as pd
+
 import numpy as np
 from scipy import stats
 
-# getting car data from UCI
-df = pd.read_csv('https://archive.ics.uci.edu/ml/machine-learning-databases/auto-mpg/auto-mpg.data',sep='\s+',
-                 header=None,names=['mpg','cylinders','displacement','horsepower','weight','acceleration','model_year','origin','car_name'])
-df.head()
 
 # Anova test code
 def do_anova_test(df, res_var, xfac_var, anova_model,ss_typ=3,
@@ -175,15 +172,16 @@ def do_anova_test(df, res_var, xfac_var, anova_model,ss_typ=3,
     
     return results
 
-# Syntax to use the function
-results = do_anova_test(df=df, res_var='mpg',xfac_var='cylinders', 
-                        anova_model='mpg ~ C(cylinders)+C(origin)+C(cylinders):C(origin)',
-                        ss_typ=3, result_full=True)
 {{< /codeblock >}}
 
 
 
 {{< codeblock "plot_hsd.py" "python" "" "plot_hsd.py" >}}
+import seaborn as sns
+import matplotlib.pyplot as plt
+
+plt.style.use('seaborn-bright')
+
 def plot_hsd(hsdres,p_cutoff=0.05,title=None,ax=None,figsize=(10,7)):
      """
      Do plotting of tukeyhsd results
@@ -232,15 +230,35 @@ def plot_hsd(hsdres,p_cutoff=0.05,title=None,ax=None,figsize=(10,7)):
     else:
         return axp
 
-# Syntax to use the function
-plot_hsd(results.tukeyhsd.sort_values('Diff'), title="Tukey HSD resutls Anova of MPG ~ Cylinder")
 {{< /codeblock >}}
 
 
 # What are the results
 
-{{< multitabs name="mtab" tabNum="1" showtab="ComparisionPlot">}}
-{{< tabit name="Results" >}}
+Pheww... Thats too much code right. But that would save a lot of your time in real life. So in reallife you would write code as 3 steps below:
+
+{{< codeblock "run_anova.py" "python" "" "run_anova.py" >}}
+# import libraries
+import pandas as pd
+
+# Getting car data from UCI
+df = pd.read_csv('https://archive.ics.uci.edu/ml/machine-learning-databases/auto-mpg/auto-mpg.data',
+				 sep='\s+',header=None,
+				 names=['mpg','cylinders','displacement','horsepower','weight',
+				 'acceleration','model_year','origin','car_name'])
+df.head()
+
+# Syntax to do anove with validating the assumption, doing test and a post-hoc
+results = do_anova_test(df=df, res_var='mpg',xfac_var='cylinders', 
+                        anova_model='mpg ~ C(cylinders)+C(origin)+C(cylinders):C(origin)',
+                        ss_typ=3, result_full=True)
+
+# Numbers are clumsy for most. Making more interpretable plot on above results.
+plot_hsd(results.tukeyhsd.sort_values('Diff'), title="Tukey HSD resutls Anova of MPG ~ Cylinder")
+
+
+{{< /codeblock >}}
+
 
 Results form the `do_anova_test`
 
@@ -278,28 +296,23 @@ Tukey HSD Result:
 8       6       5   7.3810   0.0182  14.7437   3.8854   0.0491
 9       3       5   6.8167  -2.7539  16.3873   2.7606   0.2919
 ```
-{{< /tabit >}}
-{{< tabit name="ComparisionPlot" >}}
 
 Results form the `plot_hsd`
 
 {{< image src="/files/figures/TukeyHSD.png" title="**Tukey's HSD coomparision based on Anova Results**">}}
 
 </br>
-{< /tabit >}}  
-{{< /multitabs >}}  
 
-Plots look good with 'p-values'.
-
+Plots look good with 'p-values'. 
 
 # Conclusion  
   
 
-{{ hl-text green}}
+{{< hl-text green >}}
 Now since we applied the above to a *_Non RCT_* we cannot conclude that Difference in mpg based on cylinder is huge specially as number of cylinders goes up.
 But this statement might not be as explicit as might be apperiang from plot. Unless you have a strong believe that the data follows with rules and assumptions of RCTs,
 we should be only seeking *intresting* as in *associated* results and not *cause-effet* resluts.
-{{ /hl-text}}
+{{< /hl-text >}}
 
 Hope this give you kickstart to find you intresting patterns. Happy Learning! 
 
